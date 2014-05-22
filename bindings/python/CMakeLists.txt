@@ -114,37 +114,29 @@ if (MSVC)
   add_definitions(/bigobj)
 endif(MSVC)
 
-add_library(binding_python_lib SHARED libsedml_wrap.cpp)
-add_dependencies( binding_python_lib binding_python_swig) 
+# BioPreDyn patch - Changed name of the binding targets so that they do not
+# overlap with the the ones from libNuML and libSBML
+add_library(sedml_binding_python_lib SHARED libsedml_wrap.cpp)
+add_dependencies( sedml_binding_python_lib binding_python_swig)
 
-set_target_properties (binding_python_lib PROPERTIES OUTPUT_NAME "_libsedml")
+set_target_properties (sedml_binding_python_lib PROPERTIES OUTPUT_NAME "_libsedml")
 if (UNIX)
-	set_target_properties (binding_python_lib PROPERTIES PREFIX "")
-	set_target_properties (binding_python_lib PROPERTIES SUFFIX ".so")
+	set_target_properties (sedml_binding_python_lib PROPERTIES PREFIX "")
+	set_target_properties (sedml_binding_python_lib PROPERTIES SUFFIX ".so")
 else()		
 	if (CYGWIN)
-		set_target_properties (binding_python_lib PROPERTIES PREFIX "")
-		set_target_properties (binding_python_lib PROPERTIES SUFFIX ".dll")
+		set_target_properties (sedml_binding_python_lib PROPERTIES PREFIX "")
+		set_target_properties (sedml_binding_python_lib PROPERTIES SUFFIX ".dll")
 	else()
-		set_target_properties (binding_python_lib PROPERTIES SUFFIX ".pyd")	
+		set_target_properties (sedml_binding_python_lib PROPERTIES SUFFIX ".pyd")	
 	endif()
 endif()
 
-target_link_libraries(binding_python_lib ${LIBSEDML_LIBRARY}-static ${PYTHON_LIBRARIES})
+# BioPreDyn patch - linking libSEDML wrappers to libSBML wrappers
+target_link_libraries(sedml_binding_python_lib sbml_binding_python_lib ${LIBSEDML_LIBRARY}-static ${PYTHON_LIBRARIES})
 
-# 
-# Determine the python installation directory
-#
-set(PYTHON_PACKAGE_INSTALL_DIR)
-if (UNIX OR CYGWIN) 
-  execute_process(COMMAND "${PYTHON_EXECUTABLE}" -c "import sys;import platform; sys.stdout.write(platform.python_version()[:3])"
-    OUTPUT_VARIABLE PYTHON_VERSION)
-  set(PYTHON_PACKAGE_INSTALL_DIR ${CMAKE_INSTALL_LIBDIR}/python${PYTHON_VERSION}/site-packages)
-else()
-  set(PYTHON_PACKAGE_INSTALL_DIR ${MISC_PREFIX}bindings/python)
-endif()
-
-INSTALL(TARGETS binding_python_lib DESTINATION ${PYTHON_PACKAGE_INSTALL_DIR}/libsedml )
+# BioPreDyn patch - removed PYTHON_PACKAGE_INSTALL_DIR determination
+INSTALL(TARGETS sedml_binding_python_lib DESTINATION ${PYTHON_PACKAGE_INSTALL_DIR}/libsedml)
 
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/libsedml.pth" "libsedml\n")
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/libsedml.pth  DESTINATION ${PYTHON_PACKAGE_INSTALL_DIR})
