@@ -129,6 +129,6 @@ if (UNIX)
 	endif()
 endif()
 
-target_link_libraries(binding_ruby_lib ${LIBSEDML_LIBRARY}-static ${RUBY_LIBRARY})
+target_link_libraries(binding_ruby_lib ${LIBSEDML_PREFIX}-static ${RUBY_LIBRARY})
 install(TARGETS binding_ruby_lib DESTINATION ${RUBY_PACKAGE_INSTALL_DIR} )
 

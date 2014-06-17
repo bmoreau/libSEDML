@@ -51,7 +51,7 @@ foreach(example
 	if (WIN32 AND NOT CYGWIN)
 	set_target_properties(example_c_${example} PROPERTIES COMPILE_DEFINITIONS "LIBSEDML_STATIC=1")
 	endif()
-	target_link_libraries(example_c_${example} ${LIBSEDML_LIBRARY}-static)
+	target_link_libraries(example_c_${example} ${LIBSEDML_PREFIX}-static)
 	
 	if (WITH_LIBXML)
 		target_link_libraries(example_c_${example} ${LIBXML_LIBRARY} ${EXTRA_LIBS})

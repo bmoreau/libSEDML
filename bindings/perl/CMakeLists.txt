@@ -183,7 +183,7 @@ add_library(binding_perl_lib MODULE ${CMAKE_CURRENT_BINARY_DIR}/LibSEDML.cpp)
 set_source_files_properties(${CMAKE_CURRENT_BINARY_DIR}/LibSEDML.cpp 
       PROPERTIES OBJECT_DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/LibSEDML_wrap.cpp)
 add_dependencies(binding_perl_lib binding_perl_swig)
-target_link_libraries(binding_perl_lib ${LIBSEDML_LIBRARY}-static ${PERL_LIBRARY})
+target_link_libraries(binding_perl_lib ${LIBSEDML_PREFIX}-static ${PERL_LIBRARY})
 
 set_target_properties(binding_perl_lib PROPERTIES  OUTPUT_NAME LibSEDML)
 set_target_properties(binding_perl_lib PROPERTIES  PREFIX "")

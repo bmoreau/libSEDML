@@ -133,7 +133,7 @@ else()
 endif()
 
 # BioPreDyn patch - linking libSEDML wrappers to libSBML wrappers
-target_link_libraries(sedml_binding_python_lib sbml_binding_python_lib ${LIBSEDML_LIBRARY}-static ${PYTHON_LIBRARIES})
+target_link_libraries(sedml_binding_python_lib sbml_binding_python_lib ${LIBSEDML_PREFIX}-static ${PYTHON_LIBRARIES})
 
 # BioPreDyn patch - removed PYTHON_PACKAGE_INSTALL_DIR determination
 INSTALL(TARGETS sedml_binding_python_lib DESTINATION ${PYTHON_PACKAGE_INSTALL_DIR}/libsedml)

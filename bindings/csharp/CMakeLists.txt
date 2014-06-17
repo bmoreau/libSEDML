@@ -160,7 +160,7 @@ set_target_properties (binding_csharp_native_lib PROPERTIES OUTPUT_NAME "${UNIX_
 else()
 set_target_properties (binding_csharp_native_lib PROPERTIES OUTPUT_NAME ${LIBSEDML_CSHARP_BINDING_NATIVE_LIBRARY_NAME})
 endif()
-target_link_libraries(binding_csharp_native_lib ${LIBSEDML_LIBRARY}-static)
+target_link_libraries(binding_csharp_native_lib ${LIBSEDML_PREFIX}-static)
 install(TARGETS binding_csharp_native_lib
         DESTINATION ${CSHAPR_PACKAGE_INSTALL_DIR}
   )
