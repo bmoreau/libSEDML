@@ -660,7 +660,7 @@ SedListOfSurfaces::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedSurface_create(unsigned int level, unsigned int version)
 {
@@ -671,7 +671,7 @@ SedSurface_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedSurface_free(SedSurface_t * ss)
 {
@@ -683,7 +683,7 @@ SedSurface_free(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedSurface_clone(SedSurface_t * ss)
 {
@@ -701,7 +701,7 @@ SedSurface_clone(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_getLogZ(SedSurface_t * ss)
 {
@@ -712,7 +712,7 @@ SedSurface_getLogZ(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSurface_getZDataReference(SedSurface_t * ss)
 {
@@ -726,7 +726,7 @@ SedSurface_getZDataReference(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_isSetLogZ(SedSurface_t * ss)
 {
@@ -737,7 +737,7 @@ SedSurface_isSetLogZ(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_isSetZDataReference(SedSurface_t * ss)
 {
@@ -748,7 +748,7 @@ SedSurface_isSetZDataReference(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_setLogZ(SedSurface_t * ss, int logZ)
 {
@@ -759,7 +759,7 @@ SedSurface_setLogZ(SedSurface_t * ss, int logZ)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_setZDataReference(SedSurface_t * ss, const char * zDataReference)
 {
@@ -770,7 +770,7 @@ SedSurface_setZDataReference(SedSurface_t * ss, const char * zDataReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_unsetLogZ(SedSurface_t * ss)
 {
@@ -781,7 +781,7 @@ SedSurface_unsetLogZ(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_unsetZDataReference(SedSurface_t * ss)
 {
@@ -792,7 +792,7 @@ SedSurface_unsetZDataReference(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSurface_hasRequiredAttributes(SedSurface_t * ss)
 {
@@ -803,7 +803,7 @@ SedSurface_hasRequiredAttributes(SedSurface_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedListOfSurfaces_getById(SedListOf_t * lo, const char * sid)
 {
@@ -817,7 +817,7 @@ SedListOfSurfaces_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedListOfSurfaces_removeById(SedListOf_t * lo, const char * sid)
 {

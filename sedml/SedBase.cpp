@@ -3394,7 +3394,7 @@ SedBase::getElementNamespace() const
  * 
  * @return the value of the "metaid" attribute of @p sb
  */
-LIBSEDML_EXTERN
+
 const char *
 SedBase_getMetaId (SedBase_t *sb)
 {
@@ -3410,7 +3410,7 @@ SedBase_getMetaId (SedBase_t *sb)
 // * 
 // * @return the value of the "id" attribute of @p sb
 // */
-//LIBSEDML_EXTERN
+//
 //const char *
 //SedBase_getId (const SedBase_t *sb)
 //{
@@ -3426,7 +3426,7 @@ SedBase_getMetaId (SedBase_t *sb)
 // * 
 // * @return the value of the "name" attribute of @p sb
 // */
-//LIBSEDML_EXTERN
+//
 //const char *
 //SedBase_getName (const SedBase_t *sb)
 //{
@@ -3442,7 +3442,7 @@ SedBase_getMetaId (SedBase_t *sb)
  * 
  * @return the parent SedDocument of this Sed object.
  */
-LIBSEDML_EXTERN
+
 const SedDocument_t *
 SedBase_getSedDocument (SedBase_t *sb)
 {
@@ -3458,7 +3458,7 @@ SedBase_getSedDocument (SedBase_t *sb)
  * 
  * @return the parent SedBase  of this Sed object.
  */
-LIBSEDML_EXTERN
+
 const SedBase_t *
 SedBase_getParentSedObject (SedBase_t *sb)
 {
@@ -3483,7 +3483,7 @@ SedBase_getParentSedObject (SedBase_t *sb)
  * the corresponding typecode (int), NULL if there is no ancestor of
  * this type.
  */
-LIBSEDML_EXTERN
+
 const SedBase_t *
 SedBase_getAncestorOfType (SedBase_t *sb, int type, const char* pkgName)
 {
@@ -3500,7 +3500,7 @@ SedBase_getAncestorOfType (SedBase_t *sb, int type, const char* pkgName)
  * 
  * @see getVersion()
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedBase_getLevel (const SedBase_t *sb)
 {
@@ -3517,7 +3517,7 @@ SedBase_getLevel (const SedBase_t *sb)
  *
  * @see getLevel()
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedBase_getVersion (const SedBase_t *sb)
 {
@@ -3532,7 +3532,7 @@ SedBase_getVersion (const SedBase_t *sb)
  *
  * @return the XMLNode_t structure representing the notes from this object.
  */
-LIBSEDML_EXTERN
+
 XMLNode_t *
 SedBase_getNotes (SedBase_t *sb)
 {
@@ -3549,7 +3549,7 @@ SedBase_getNotes (SedBase_t *sb)
  *
  * @return the string (char*) representing the notes from this object.
  */
-LIBSEDML_EXTERN
+
 char*
 SedBase_getNotesString (SedBase_t *sb)
 {
@@ -3565,7 +3565,7 @@ SedBase_getNotesString (SedBase_t *sb)
  *
  * @return the XMLNode_t structure representing the annotation from this object.
  */
-LIBSEDML_EXTERN
+
 XMLNode_t *
 SedBase_getAnnotation (SedBase_t *sb)
 {
@@ -3582,7 +3582,7 @@ SedBase_getAnnotation (SedBase_t *sb)
  *
  * @return the string (char*) representing the annotation from this object.
  */
-LIBSEDML_EXTERN
+
 char*
 SedBase_getAnnotationString (SedBase_t *sb)
 {
@@ -3600,7 +3600,7 @@ SedBase_getAnnotationString (SedBase_t *sb)
  * @return nonzero (for true) if the "metaid" attribute of this Sed object
  * is set, zero (for false) otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_isSetMetaId (const SedBase_t *sb)
 {
@@ -3617,7 +3617,7 @@ SedBase_isSetMetaId (const SedBase_t *sb)
 // * @return nonzero (for true) if the "id" attribute of this Sed object
 // * is set, zero (for false) otherwise.
 // */
-//LIBSEDML_EXTERN
+//
 //int
 //SedBase_isSetId (const SedBase_t *sb)
 //{
@@ -3634,7 +3634,7 @@ SedBase_isSetMetaId (const SedBase_t *sb)
 // * @return nonzero (for true) if the "name" attribute of this Sed object
 // * is set, zero (for false) otherwise.
 // */
-//LIBSEDML_EXTERN
+//
 //int
 //SedBase_isSetName (const SedBase_t *sb)
 //{
@@ -3651,7 +3651,7 @@ SedBase_isSetMetaId (const SedBase_t *sb)
  * @return nonzero (for true) if the "notes" subelement of this Sed object
  * is set, zero (for false) otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_isSetNotes (const SedBase_t *sb)
 {
@@ -3668,7 +3668,7 @@ SedBase_isSetNotes (const SedBase_t *sb)
  * @return nonzero (for true) if the "annotation" subelement of this Sed object
  * is set, zero (for false) otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_isSetAnnotation (const SedBase_t *sb)
 {
@@ -3705,7 +3705,7 @@ SedBase_isSetAnnotation (const SedBase_t *sb)
  * @note Using this function with the metaid set to NULL is equivalent to
  * unsetting the "metaid" attribute.
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setMetaId (SedBase_t *sb, const char *metaid)
 {
@@ -3750,7 +3750,7 @@ SedBase_setMetaId (SedBase_t *sb, const char *metaid)
 // * @note Using this function with an id of NULL is equivalent to
 // * unsetting the "id" attribute.
 // */
-//LIBSEDML_EXTERN
+//
 //int
 //SedBase_setId (SedBase_t *sb, const char *sid)
 //{
@@ -3778,7 +3778,7 @@ SedBase_setMetaId (SedBase_t *sb, const char *metaid)
 // * @note Using this function with the name set to NULL is equivalent to
 // * unsetting the "name" attribute.
 // */
-//LIBSEDML_EXTERN
+//
 //int
 //SedBase_setName (SedBase_t *sb, const char *name)
 //{
@@ -3800,7 +3800,7 @@ SedBase_setMetaId (SedBase_t *sb, const char *metaid)
  * returned by this function are:
  * @li LIBSEDML_OPERATION_SUCCESS
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setNamespaces (SedBase_t *sb, XMLNamespaces_t *xmlns)
 {
@@ -3824,7 +3824,7 @@ SedBase_setNamespaces (SedBase_t *sb, XMLNamespaces_t *xmlns)
  * @li LIBSEDML_OPERATION_SUCCESS
  * @li LIBSEDML_INVALID_OBJECT
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setNotes (SedBase_t *sb, XMLNode_t *notes)
 {
@@ -3849,7 +3849,7 @@ SedBase_setNotes (SedBase_t *sb, XMLNode_t *notes)
  * @li LIBSEDML_INVALID_OBJECT
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setNotesString (SedBase_t *sb, char *notes)
 {
@@ -3883,7 +3883,7 @@ SedBase_setNotesString (SedBase_t *sb, char *notes)
  * @li LIBSEDML_INVALID_OBJECT
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setNotesStringAddMarkup (SedBase_t *sb, char *notes)
 {
@@ -3917,7 +3917,7 @@ SedBase_setNotesStringAddMarkup (SedBase_t *sb, char *notes)
  * @li LIBSEDML_INVALID_OBJECT
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_appendNotes (SedBase_t *sb, XMLNode_t *notes)
 {
@@ -3942,7 +3942,7 @@ SedBase_appendNotes (SedBase_t *sb, XMLNode_t *notes)
  * @li LIBSEDML_INVALID_OBJECT
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_appendNotesString (SedBase_t *sb, char *notes)
 {
@@ -3970,7 +3970,7 @@ SedBase_appendNotesString (SedBase_t *sb, char *notes)
  * returned by this function are:
  * @li LIBSEDML_OPERATION_SUCCESS
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setAnnotation (SedBase_t *sb, XMLNode_t *annotation)
 {
@@ -3994,7 +3994,7 @@ SedBase_setAnnotation (SedBase_t *sb, XMLNode_t *annotation)
  * @li LIBSEDML_OPERATION_SUCCESS
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setAnnotationString (SedBase_t *sb, char *annotation)
 {
@@ -4027,7 +4027,7 @@ SedBase_setAnnotationString (SedBase_t *sb, char *annotation)
  * @li LIBSEDML_OPERATION_SUCCESS
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_appendAnnotation (SedBase_t *sb, XMLNode_t *annotation)
 {
@@ -4051,7 +4051,7 @@ SedBase_appendAnnotation (SedBase_t *sb, XMLNode_t *annotation)
  * @li LIBSEDML_OPERATION_SUCCESS
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_appendAnnotationString (SedBase_t *sb, char *annotation)
 {
@@ -4094,7 +4094,7 @@ SedBase_appendAnnotationString (SedBase_t *sb, char *annotation)
  * @see SedBase_replaceTopLevelAnnotationElement (SedBase_t *, XMLNode_t *)
  * @see SedBase_replaceTopLevelAnnotationElementString (SedBase_t *, char *)
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_removeTopLevelAnnotationElement (SedBase_t *sb, char *name)
 {
@@ -4139,7 +4139,7 @@ SedBase_removeTopLevelAnnotationElement (SedBase_t *sb, char *name)
  * @see SedBase_replaceTopLevelAnnotationElement (SedBase_t *, XMLNode_t *)
  * @see SedBase_replaceTopLevelAnnotationElementString (SedBase_t *, char *)
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_removeTopLevelAnnotationElementWithURI (SedBase_t *sb, const char *name, 
                                               const char *uri)
@@ -4186,7 +4186,7 @@ SedBase_removeTopLevelAnnotationElementWithURI (SedBase_t *sb, const char *name,
  *  const char *, const char *)
  * @see SedBase_replaceTopLevelAnnotationElementString (SedBase_t *, char *)
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_replaceTopLevelAnnotationElement (SedBase_t *sb, XMLNode_t *annotation)
 {
@@ -4232,7 +4232,7 @@ SedBase_replaceTopLevelAnnotationElement (SedBase_t *sb, XMLNode_t *annotation)
  *  const char *, const char *)
  * @see SedBase_replaceTopLevelAnnotationElement (SedBase_t *, XMLNode_t *)
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_replaceTopLevelAnnotationElementString (SedBase_t *sb, char *annotation)
 {
@@ -4260,7 +4260,7 @@ SedBase_replaceTopLevelAnnotationElementString (SedBase_t *sb, char *annotation)
  * @li LIBSEDML_OPERATION_SUCCESS
  * @li LIBSEDML_OPERATION_FAILED
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_unsetMetaId (SedBase_t *sb)
 {
@@ -4284,7 +4284,7 @@ SedBase_unsetMetaId (SedBase_t *sb)
 * @li @link OperationReturnValues_t#LIBSEDML_OPERATION_SUCCESS LIBSEDML_OPERATION_SUCCESS @endlink
 * @li @link OperationReturnValues_t#LIBSEDML_OPERATION_FAILED LIBSEDML_OPERATION_FAILED @endlink
 */
-LIBSEDML_EXTERN
+
 int
 SedBase_unsetId (SedBase_t *sb)
 {
@@ -4305,7 +4305,7 @@ SedBase_unsetId (SedBase_t *sb)
 // * @li @link OperationReturnValues_t#LIBSEDML_OPERATION_SUCCESS LIBSEDML_OPERATION_SUCCESS @endlink
 // * @li @link OperationReturnValues_t#LIBSEDML_OPERATION_FAILED LIBSEDML_OPERATION_FAILED @endlink
 // */
-//LIBSEDML_EXTERN
+//
 //int
 //SedBase_unsetName (SedBase_t *sb)
 //{
@@ -4324,7 +4324,7 @@ SedBase_unsetId (SedBase_t *sb)
  * returned by this function are:
  * @li LIBSEDML_OPERATION_SUCCESS
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_unsetNotes (SedBase_t *sb)
 {
@@ -4346,7 +4346,7 @@ SedBase_unsetNotes (SedBase_t *sb)
  * returned by this function are:
  * @li LIBSEDML_OPERATION_SUCCESS
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_unsetAnnotation (SedBase_t *sb)
 {
@@ -4386,7 +4386,7 @@ SedBase_unsetAnnotation (SedBase_t *sb)
  * @see getElementName()
  * @see getPackageName()
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_getTypeCode (const SedBase_t *sb)
 {
@@ -4403,7 +4403,7 @@ SedBase_getTypeCode (const SedBase_t *sb)
  *
  * @param sb the SedBase_t structure
  */
-LIBSEDML_EXTERN
+
 const char *
 SedBase_getElementName (const SedBase_t *sb)
 {
@@ -4422,7 +4422,7 @@ SedBase_getElementName (const SedBase_t *sb)
  *
  * @see getColumn().
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedBase_getLine (const SedBase_t *sb)
 {
@@ -4440,7 +4440,7 @@ SedBase_getLine (const SedBase_t *sb)
  * 
  * @see getLine().
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedBase_getColumn (const SedBase_t *sb)
 {
@@ -4459,7 +4459,7 @@ SedBase_getColumn (const SedBase_t *sb)
   * @return nonzero (true) if the level, version and namespace values of this 
   * Sed object correspond to a valid set of values, zero (false) otherwise.
   */
-LIBSEDML_EXTERN
+
 int
 SedBase_hasValidLevelVersionNamespaceCombination(SedBase_t *sb)
 {
@@ -4486,7 +4486,7 @@ SedBase_hasValidLevelVersionNamespaceCombination(SedBase_t *sb)
  * @li LIBSEDML_OPERATION_FAILED
  * @li LIBSEDML_INVALID_OBJECT
  */
-LIBSEDML_EXTERN
+
 int
 SedBase_setUserData(SedBase_t* sb, void *userData)
 {
@@ -4502,14 +4502,14 @@ SedBase_setUserData(SedBase_t* sb, void *userData)
  * @return the user data of this node. NULL if no user data has been.
  * @see SedBase_setUserData
  */
-LIBSEDML_EXTERN
+
 void *SedBase_getUserData(SedBase_t* sb)
 {
   if (sb == NULL) return NULL;
   return sb->getUserData();
 }
 
-LIBSEDML_EXTERN 
+ 
 SedBase_t* 
 SedBase_getElementBySId(SedBase_t* sb, const char* id)
 {
@@ -4517,7 +4517,7 @@ SedBase_getElementBySId(SedBase_t* sb, const char* id)
   return sb->getElementBySId(id);
 }
 
-LIBSEDML_EXTERN 
+ 
 SedBase_t* 
 SedBase_getElementByMetaId(SedBase_t* sb, const char* metaid)
 {
@@ -4525,7 +4525,7 @@ SedBase_getElementByMetaId(SedBase_t* sb, const char* metaid)
   return sb->getElementByMetaId(metaid);
 }
 
-LIBSEDML_EXTERN 
+ 
 List_t* 
 SedBase_getAllElements(SedBase_t* sb)
 {

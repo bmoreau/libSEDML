@@ -957,7 +957,7 @@ SedListOfCurves::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedCurve_create(unsigned int level, unsigned int version)
 {
@@ -968,7 +968,7 @@ SedCurve_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedCurve_free(SedCurve_t * sc)
 {
@@ -980,7 +980,7 @@ SedCurve_free(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedCurve_clone(SedCurve_t * sc)
 {
@@ -998,7 +998,7 @@ SedCurve_clone(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedCurve_getId(SedCurve_t * sc)
 {
@@ -1012,7 +1012,7 @@ SedCurve_getId(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedCurve_getName(SedCurve_t * sc)
 {
@@ -1026,7 +1026,7 @@ SedCurve_getName(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_getLogX(SedCurve_t * sc)
 {
@@ -1037,7 +1037,7 @@ SedCurve_getLogX(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_getLogY(SedCurve_t * sc)
 {
@@ -1048,7 +1048,7 @@ SedCurve_getLogY(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedCurve_getXDataReference(SedCurve_t * sc)
 {
@@ -1062,7 +1062,7 @@ SedCurve_getXDataReference(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedCurve_getYDataReference(SedCurve_t * sc)
 {
@@ -1076,7 +1076,7 @@ SedCurve_getYDataReference(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_isSetId(SedCurve_t * sc)
 {
@@ -1087,7 +1087,7 @@ SedCurve_isSetId(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_isSetName(SedCurve_t * sc)
 {
@@ -1098,7 +1098,7 @@ SedCurve_isSetName(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_isSetLogX(SedCurve_t * sc)
 {
@@ -1109,7 +1109,7 @@ SedCurve_isSetLogX(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_isSetLogY(SedCurve_t * sc)
 {
@@ -1120,7 +1120,7 @@ SedCurve_isSetLogY(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_isSetXDataReference(SedCurve_t * sc)
 {
@@ -1131,7 +1131,7 @@ SedCurve_isSetXDataReference(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_isSetYDataReference(SedCurve_t * sc)
 {
@@ -1142,7 +1142,7 @@ SedCurve_isSetYDataReference(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_setId(SedCurve_t * sc, const char * id)
 {
@@ -1153,7 +1153,7 @@ SedCurve_setId(SedCurve_t * sc, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_setName(SedCurve_t * sc, const char * name)
 {
@@ -1164,7 +1164,7 @@ SedCurve_setName(SedCurve_t * sc, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_setLogX(SedCurve_t * sc, int logX)
 {
@@ -1175,7 +1175,7 @@ SedCurve_setLogX(SedCurve_t * sc, int logX)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_setLogY(SedCurve_t * sc, int logY)
 {
@@ -1186,7 +1186,7 @@ SedCurve_setLogY(SedCurve_t * sc, int logY)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_setXDataReference(SedCurve_t * sc, const char * xDataReference)
 {
@@ -1197,7 +1197,7 @@ SedCurve_setXDataReference(SedCurve_t * sc, const char * xDataReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_setYDataReference(SedCurve_t * sc, const char * yDataReference)
 {
@@ -1208,7 +1208,7 @@ SedCurve_setYDataReference(SedCurve_t * sc, const char * yDataReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_unsetId(SedCurve_t * sc)
 {
@@ -1219,7 +1219,7 @@ SedCurve_unsetId(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_unsetName(SedCurve_t * sc)
 {
@@ -1230,7 +1230,7 @@ SedCurve_unsetName(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_unsetLogX(SedCurve_t * sc)
 {
@@ -1241,7 +1241,7 @@ SedCurve_unsetLogX(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_unsetLogY(SedCurve_t * sc)
 {
@@ -1252,7 +1252,7 @@ SedCurve_unsetLogY(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_unsetXDataReference(SedCurve_t * sc)
 {
@@ -1263,7 +1263,7 @@ SedCurve_unsetXDataReference(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_unsetYDataReference(SedCurve_t * sc)
 {
@@ -1274,7 +1274,7 @@ SedCurve_unsetYDataReference(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedCurve_hasRequiredAttributes(SedCurve_t * sc)
 {
@@ -1285,7 +1285,7 @@ SedCurve_hasRequiredAttributes(SedCurve_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedListOfCurves_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1299,7 +1299,7 @@ SedListOfCurves_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedListOfCurves_removeById(SedListOf_t * lo, const char * sid)
 {

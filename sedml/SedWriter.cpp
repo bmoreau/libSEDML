@@ -279,7 +279,7 @@ SedWriter::writeSedML (const SedDocument* d, std::ostream& stream)
  * @return the string on success and 0 if one of the underlying parser
  * components fail (rare).
  */
-LIBSEDML_EXTERN
+
 char*
 SedWriter::writeToString (const SedDocument* d)
 {
@@ -290,7 +290,7 @@ SedWriter::writeToString (const SedDocument* d)
 }
 
 
-LIBSEDML_EXTERN
+
 char*
 SedWriter::writeSedMLToString (const SedDocument* d)
 {
@@ -299,7 +299,7 @@ SedWriter::writeSedMLToString (const SedDocument* d)
 /** @endcond */
 
 
-LIBSEDML_EXTERN
+
 bool
 SedWriter::writeSedMLToFile (const SedDocument* d, const std::string& filename)
 {
@@ -337,7 +337,7 @@ SedWriter::hasBzip2()
 /**
  * Creates a new SedWriter and returns a pointer to it.
  */
-LIBSEDML_EXTERN
+
 SedWriter_t *
 SedWriter_create ()
 {
@@ -348,7 +348,7 @@ SedWriter_create ()
 /**
  * Frees the given SedWriter.
  */
-LIBSEDML_EXTERN
+
 void
 SedWriter_free (SedWriter_t *sw)
 {
@@ -371,7 +371,7 @@ SedWriter_free (SedWriter_t *sw)
  * returned by this function are:
  * @li @link OperationReturnValues_t#LIBSEDML_OPERATION_SUCCESS LIBSEDML_OPERATION_SUCCESS @endlink
  */
-LIBSEDML_EXTERN
+
 int
 SedWriter_setProgramName (SedWriter_t *sw, const char *name)
 {
@@ -397,7 +397,7 @@ SedWriter_setProgramName (SedWriter_t *sw, const char *name)
  * returned by this function are:
  * @li @link OperationReturnValues_t#LIBSEDML_OPERATION_SUCCESS LIBSEDML_OPERATION_SUCCESS @endlink
  */
-LIBSEDML_EXTERN
+
 int
 SedWriter_setProgramVersion (SedWriter_t *sw, const char *version)
 {
@@ -432,7 +432,7 @@ SedWriter_setProgramVersion (SedWriter_t *sw, const char *version)
  * @return non-zero on success and zero if the filename could not be opened
  * for writing.
  */
-LIBSEDML_EXTERN
+
 int
 SedWriter_writeSedML ( SedWriter_t         *sw,
                        const SedDocument_t *d,
@@ -469,7 +469,7 @@ SedWriter_writeSedML ( SedWriter_t         *sw,
  * @return non-zero on success and zero if the filename could not be opened
  * for writing.
  */
-LIBSEDML_EXTERN
+
 int
 SedWriter_writeSedMLToFile ( SedWriter_t         *sw,
                        const SedDocument_t *d,
@@ -491,7 +491,7 @@ SedWriter_writeSedMLToFile ( SedWriter_t         *sw,
  * @return the string on success and NULL if one of the underlying parser
  * components fail (rare).
  */
-LIBSEDML_EXTERN
+
 char *
 SedWriter_writeSedMLToString (SedWriter_t *sw, const SedDocument_t *d)
 {
@@ -508,7 +508,7 @@ SedWriter_writeSedMLToString (SedWriter_t *sw, const SedDocument_t *d)
  *
  * @return @c non-zero if zlib is linked, @c zero otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedWriter_hasZlib ()
 {
@@ -522,7 +522,7 @@ SedWriter_hasZlib ()
  *
  * @return @c non-zero if bzip2 is linked, @c zero otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedWriter_hasBzip2 ()
 {
@@ -539,7 +539,7 @@ SedWriter_hasBzip2 ()
  * @return non-zero on success and zero if the filename could not be opened
  * for writing.
  */
-LIBSEDML_EXTERN
+
 int
 writeSedML (const SedDocument_t *d, const char *filename)
 {
@@ -560,7 +560,7 @@ writeSedML (const SedDocument_t *d, const char *filename)
  * @return non-zero on success and zero if the filename could not be opened
  * for writing.
  */
-LIBSEDML_EXTERN
+
 int
 writeSedMLToFile (const SedDocument_t *d, const char *filename)
 {
@@ -583,7 +583,7 @@ writeSedMLToFile (const SedDocument_t *d, const char *filename)
  * @return the string on success and NULL if one of the underlying parser
  * components fail (rare).
  */
-LIBSEDML_EXTERN
+
 char *
 writeSedMLToString (const SedDocument_t *d)
 {

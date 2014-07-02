@@ -438,7 +438,7 @@ SedPlot3D::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedPlot3D_t *
 SedPlot3D_create(unsigned int level, unsigned int version)
 {
@@ -449,7 +449,7 @@ SedPlot3D_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedPlot3D_free(SedPlot3D_t * spd)
 {
@@ -461,7 +461,7 @@ SedPlot3D_free(SedPlot3D_t * spd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedPlot3D_t *
 SedPlot3D_clone(SedPlot3D_t * spd)
 {
@@ -476,56 +476,56 @@ SedPlot3D_clone(SedPlot3D_t * spd)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedPlot3D_addSurface(SedPlot3D_t * spd, SedSurface_t * ss)
 {
 	return  (spd != NULL) ? spd->addSurface(ss) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedPlot3D_createSurface(SedPlot3D_t * spd)
 {
 	return  (spd != NULL) ? spd->createSurface() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedPlot3D_getSedListOfSurfaces(SedPlot3D_t * spd)
 {
 	return  (spd != NULL) ? (SedListOf_t *)spd->getListOfSurfaces() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedPlot3D_getSurface(SedPlot3D_t * spd, unsigned int n)
 {
 	return  (spd != NULL) ? spd->getSurface(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedPlot3D_getSurfaceById(SedPlot3D_t * spd, const char * sid)
 {
 	return  (spd != NULL) ? spd->getSurface(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedPlot3D_getNumSurfaces(SedPlot3D_t * spd)
 {
 	return  (spd != NULL) ? spd->getNumSurfaces() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedPlot3D_removeSurface(SedPlot3D_t * spd, unsigned int n)
 {
 	return  (spd != NULL) ? spd->removeSurface(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSurface_t *
 SedPlot3D_removeSurfaceById(SedPlot3D_t * spd, const char * sid)
 {
@@ -535,7 +535,7 @@ SedPlot3D_removeSurfaceById(SedPlot3D_t * spd, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedPlot3D_hasRequiredAttributes(SedPlot3D_t * spd)
 {
@@ -546,7 +546,7 @@ SedPlot3D_hasRequiredAttributes(SedPlot3D_t * spd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedPlot3D_hasRequiredElements(SedPlot3D_t * spd)
 {

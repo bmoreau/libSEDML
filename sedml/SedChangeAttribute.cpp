@@ -351,7 +351,7 @@ SedChangeAttribute::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedChangeAttribute_t *
 SedChangeAttribute_create(unsigned int level, unsigned int version)
 {
@@ -362,7 +362,7 @@ SedChangeAttribute_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedChangeAttribute_free(SedChangeAttribute_t * sca)
 {
@@ -374,7 +374,7 @@ SedChangeAttribute_free(SedChangeAttribute_t * sca)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedChangeAttribute_t *
 SedChangeAttribute_clone(SedChangeAttribute_t * sca)
 {
@@ -392,7 +392,7 @@ SedChangeAttribute_clone(SedChangeAttribute_t * sca)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedChangeAttribute_getNewValue(SedChangeAttribute_t * sca)
 {
@@ -406,7 +406,7 @@ SedChangeAttribute_getNewValue(SedChangeAttribute_t * sca)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChangeAttribute_isSetNewValue(SedChangeAttribute_t * sca)
 {
@@ -417,7 +417,7 @@ SedChangeAttribute_isSetNewValue(SedChangeAttribute_t * sca)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChangeAttribute_setNewValue(SedChangeAttribute_t * sca, const char * newValue)
 {
@@ -428,7 +428,7 @@ SedChangeAttribute_setNewValue(SedChangeAttribute_t * sca, const char * newValue
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChangeAttribute_unsetNewValue(SedChangeAttribute_t * sca)
 {
@@ -439,7 +439,7 @@ SedChangeAttribute_unsetNewValue(SedChangeAttribute_t * sca)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChangeAttribute_hasRequiredAttributes(SedChangeAttribute_t * sca)
 {

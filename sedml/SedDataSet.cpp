@@ -824,7 +824,7 @@ SedListOfDataSets::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedDataSet_create(unsigned int level, unsigned int version)
 {
@@ -835,7 +835,7 @@ SedDataSet_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedDataSet_free(SedDataSet_t * sds)
 {
@@ -847,7 +847,7 @@ SedDataSet_free(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedDataSet_clone(SedDataSet_t * sds)
 {
@@ -865,7 +865,7 @@ SedDataSet_clone(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedDataSet_getId(SedDataSet_t * sds)
 {
@@ -879,7 +879,7 @@ SedDataSet_getId(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedDataSet_getLabel(SedDataSet_t * sds)
 {
@@ -893,7 +893,7 @@ SedDataSet_getLabel(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedDataSet_getName(SedDataSet_t * sds)
 {
@@ -907,7 +907,7 @@ SedDataSet_getName(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedDataSet_getDataReference(SedDataSet_t * sds)
 {
@@ -921,7 +921,7 @@ SedDataSet_getDataReference(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_isSetId(SedDataSet_t * sds)
 {
@@ -932,7 +932,7 @@ SedDataSet_isSetId(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_isSetLabel(SedDataSet_t * sds)
 {
@@ -943,7 +943,7 @@ SedDataSet_isSetLabel(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_isSetName(SedDataSet_t * sds)
 {
@@ -954,7 +954,7 @@ SedDataSet_isSetName(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_isSetDataReference(SedDataSet_t * sds)
 {
@@ -965,7 +965,7 @@ SedDataSet_isSetDataReference(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_setId(SedDataSet_t * sds, const char * id)
 {
@@ -976,7 +976,7 @@ SedDataSet_setId(SedDataSet_t * sds, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_setLabel(SedDataSet_t * sds, const char * label)
 {
@@ -987,7 +987,7 @@ SedDataSet_setLabel(SedDataSet_t * sds, const char * label)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_setName(SedDataSet_t * sds, const char * name)
 {
@@ -998,7 +998,7 @@ SedDataSet_setName(SedDataSet_t * sds, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_setDataReference(SedDataSet_t * sds, const char * dataReference)
 {
@@ -1009,7 +1009,7 @@ SedDataSet_setDataReference(SedDataSet_t * sds, const char * dataReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_unsetId(SedDataSet_t * sds)
 {
@@ -1020,7 +1020,7 @@ SedDataSet_unsetId(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_unsetLabel(SedDataSet_t * sds)
 {
@@ -1031,7 +1031,7 @@ SedDataSet_unsetLabel(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_unsetName(SedDataSet_t * sds)
 {
@@ -1042,7 +1042,7 @@ SedDataSet_unsetName(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_unsetDataReference(SedDataSet_t * sds)
 {
@@ -1053,7 +1053,7 @@ SedDataSet_unsetDataReference(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataSet_hasRequiredAttributes(SedDataSet_t * sds)
 {
@@ -1064,7 +1064,7 @@ SedDataSet_hasRequiredAttributes(SedDataSet_t * sds)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedListOfDataSets_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1078,7 +1078,7 @@ SedListOfDataSets_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedListOfDataSets_removeById(SedListOf_t * lo, const char * sid)
 {

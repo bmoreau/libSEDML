@@ -1071,7 +1071,7 @@ SedListOfDataGenerators::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDataGenerator_create(unsigned int level, unsigned int version)
 {
@@ -1082,7 +1082,7 @@ SedDataGenerator_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedDataGenerator_free(SedDataGenerator_t * sdg)
 {
@@ -1094,7 +1094,7 @@ SedDataGenerator_free(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDataGenerator_clone(SedDataGenerator_t * sdg)
 {
@@ -1112,7 +1112,7 @@ SedDataGenerator_clone(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedDataGenerator_getId(SedDataGenerator_t * sdg)
 {
@@ -1126,7 +1126,7 @@ SedDataGenerator_getId(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedDataGenerator_getName(SedDataGenerator_t * sdg)
 {
@@ -1140,7 +1140,7 @@ SedDataGenerator_getName(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 ASTNode_t*
 SedDataGenerator_getMath(SedDataGenerator_t * sdg)
 {
@@ -1154,7 +1154,7 @@ SedDataGenerator_getMath(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_isSetId(SedDataGenerator_t * sdg)
 {
@@ -1165,7 +1165,7 @@ SedDataGenerator_isSetId(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_isSetName(SedDataGenerator_t * sdg)
 {
@@ -1176,7 +1176,7 @@ SedDataGenerator_isSetName(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_isSetMath(SedDataGenerator_t * sdg)
 {
@@ -1187,7 +1187,7 @@ SedDataGenerator_isSetMath(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_setId(SedDataGenerator_t * sdg, const char * id)
 {
@@ -1198,7 +1198,7 @@ SedDataGenerator_setId(SedDataGenerator_t * sdg, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_setName(SedDataGenerator_t * sdg, const char * name)
 {
@@ -1209,7 +1209,7 @@ SedDataGenerator_setName(SedDataGenerator_t * sdg, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_setMath(SedDataGenerator_t * sdg, ASTNode_t* math)
 {
@@ -1220,7 +1220,7 @@ SedDataGenerator_setMath(SedDataGenerator_t * sdg, ASTNode_t* math)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_unsetId(SedDataGenerator_t * sdg)
 {
@@ -1231,7 +1231,7 @@ SedDataGenerator_unsetId(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_unsetName(SedDataGenerator_t * sdg)
 {
@@ -1242,7 +1242,7 @@ SedDataGenerator_unsetName(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_unsetMath(SedDataGenerator_t * sdg)
 {
@@ -1250,112 +1250,112 @@ SedDataGenerator_unsetMath(SedDataGenerator_t * sdg)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_addVariable(SedDataGenerator_t * sdg, SedVariable_t * sv)
 {
 	return  (sdg != NULL) ? sdg->addVariable(sv) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedDataGenerator_createVariable(SedDataGenerator_t * sdg)
 {
 	return  (sdg != NULL) ? sdg->createVariable() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDataGenerator_getSedListOfVariables(SedDataGenerator_t * sdg)
 {
 	return  (sdg != NULL) ? (SedListOf_t *)sdg->getListOfVariables() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedDataGenerator_getVariable(SedDataGenerator_t * sdg, unsigned int n)
 {
 	return  (sdg != NULL) ? sdg->getVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedDataGenerator_getVariableById(SedDataGenerator_t * sdg, const char * sid)
 {
 	return  (sdg != NULL) ? sdg->getVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDataGenerator_getNumVariables(SedDataGenerator_t * sdg)
 {
 	return  (sdg != NULL) ? sdg->getNumVariables() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedDataGenerator_removeVariable(SedDataGenerator_t * sdg, unsigned int n)
 {
 	return  (sdg != NULL) ? sdg->removeVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedDataGenerator_removeVariableById(SedDataGenerator_t * sdg, const char * sid)
 {
 	return  (sdg != NULL) ? sdg->removeVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_addParameter(SedDataGenerator_t * sdg, SedParameter_t * sp)
 {
 	return  (sdg != NULL) ? sdg->addParameter(sp) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedDataGenerator_createParameter(SedDataGenerator_t * sdg)
 {
 	return  (sdg != NULL) ? sdg->createParameter() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDataGenerator_getSedListOfParameters(SedDataGenerator_t * sdg)
 {
 	return  (sdg != NULL) ? (SedListOf_t *)sdg->getListOfParameters() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedDataGenerator_getParameter(SedDataGenerator_t * sdg, unsigned int n)
 {
 	return  (sdg != NULL) ? sdg->getParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedDataGenerator_getParameterById(SedDataGenerator_t * sdg, const char * sid)
 {
 	return  (sdg != NULL) ? sdg->getParameter(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDataGenerator_getNumParameters(SedDataGenerator_t * sdg)
 {
 	return  (sdg != NULL) ? sdg->getNumParameters() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedDataGenerator_removeParameter(SedDataGenerator_t * sdg, unsigned int n)
 {
 	return  (sdg != NULL) ? sdg->removeParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedDataGenerator_removeParameterById(SedDataGenerator_t * sdg, const char * sid)
 {
@@ -1365,7 +1365,7 @@ SedDataGenerator_removeParameterById(SedDataGenerator_t * sdg, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_hasRequiredAttributes(SedDataGenerator_t * sdg)
 {
@@ -1376,7 +1376,7 @@ SedDataGenerator_hasRequiredAttributes(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDataGenerator_hasRequiredElements(SedDataGenerator_t * sdg)
 {
@@ -1387,7 +1387,7 @@ SedDataGenerator_hasRequiredElements(SedDataGenerator_t * sdg)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedListOfDataGenerators_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1401,7 +1401,7 @@ SedListOfDataGenerators_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedListOfDataGenerators_removeById(SedListOf_t * lo, const char * sid)
 {

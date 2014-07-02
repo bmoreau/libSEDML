@@ -1061,7 +1061,7 @@ SedListOfModels::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedModel_create(unsigned int level, unsigned int version)
 {
@@ -1072,7 +1072,7 @@ SedModel_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedModel_free(SedModel_t * sm)
 {
@@ -1084,7 +1084,7 @@ SedModel_free(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedModel_clone(SedModel_t * sm)
 {
@@ -1102,7 +1102,7 @@ SedModel_clone(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedModel_getId(SedModel_t * sm)
 {
@@ -1116,7 +1116,7 @@ SedModel_getId(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedModel_getName(SedModel_t * sm)
 {
@@ -1130,7 +1130,7 @@ SedModel_getName(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedModel_getLanguage(SedModel_t * sm)
 {
@@ -1144,7 +1144,7 @@ SedModel_getLanguage(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedModel_getSource(SedModel_t * sm)
 {
@@ -1158,7 +1158,7 @@ SedModel_getSource(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_isSetId(SedModel_t * sm)
 {
@@ -1169,7 +1169,7 @@ SedModel_isSetId(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_isSetName(SedModel_t * sm)
 {
@@ -1180,7 +1180,7 @@ SedModel_isSetName(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_isSetLanguage(SedModel_t * sm)
 {
@@ -1191,7 +1191,7 @@ SedModel_isSetLanguage(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_isSetSource(SedModel_t * sm)
 {
@@ -1202,7 +1202,7 @@ SedModel_isSetSource(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_setId(SedModel_t * sm, const char * id)
 {
@@ -1213,7 +1213,7 @@ SedModel_setId(SedModel_t * sm, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_setName(SedModel_t * sm, const char * name)
 {
@@ -1224,7 +1224,7 @@ SedModel_setName(SedModel_t * sm, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_setLanguage(SedModel_t * sm, const char * language)
 {
@@ -1235,7 +1235,7 @@ SedModel_setLanguage(SedModel_t * sm, const char * language)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_setSource(SedModel_t * sm, const char * source)
 {
@@ -1246,7 +1246,7 @@ SedModel_setSource(SedModel_t * sm, const char * source)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_unsetId(SedModel_t * sm)
 {
@@ -1257,7 +1257,7 @@ SedModel_unsetId(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_unsetName(SedModel_t * sm)
 {
@@ -1268,7 +1268,7 @@ SedModel_unsetName(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_unsetLanguage(SedModel_t * sm)
 {
@@ -1279,7 +1279,7 @@ SedModel_unsetLanguage(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_unsetSource(SedModel_t * sm)
 {
@@ -1287,84 +1287,84 @@ SedModel_unsetSource(SedModel_t * sm)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedModel_addChange(SedModel_t * sm, SedChange_t * sc)
 {
 	return  (sm != NULL) ? sm->addChange(sc) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedRemoveXML_t *
 SedModel_createRemoveXML(SedModel_t * sm)
 {
 	return  (sm != NULL) ? sm->createRemoveXML() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedAddXML_t *
 SedModel_createAddXML(SedModel_t * sm)
 {
 	return  (sm != NULL) ? sm->createAddXML() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedChangeXML_t *
 SedModel_createChangeXML(SedModel_t * sm)
 {
 	return  (sm != NULL) ? sm->createChangeXML() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedChangeAttribute_t *
 SedModel_createChangeAttribute(SedModel_t * sm)
 {
 	return  (sm != NULL) ? sm->createChangeAttribute() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedComputeChange_t *
 SedModel_createComputeChange(SedModel_t * sm)
 {
 	return  (sm != NULL) ? sm->createComputeChange() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedModel_getSedListOfChanges(SedModel_t * sm)
 {
 	return  (sm != NULL) ? (SedListOf_t *)sm->getListOfChanges() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedModel_getChange(SedModel_t * sm, unsigned int n)
 {
 	return  (sm != NULL) ? sm->getChange(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedModel_getChangeById(SedModel_t * sm, const char * sid)
 {
 	return  (sm != NULL) ? sm->getChange(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedModel_getNumChanges(SedModel_t * sm)
 {
 	return  (sm != NULL) ? sm->getNumChanges() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedModel_removeChange(SedModel_t * sm, unsigned int n)
 {
 	return  (sm != NULL) ? sm->removeChange(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedModel_removeChangeById(SedModel_t * sm, const char * sid)
 {
@@ -1374,7 +1374,7 @@ SedModel_removeChangeById(SedModel_t * sm, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_hasRequiredAttributes(SedModel_t * sm)
 {
@@ -1385,7 +1385,7 @@ SedModel_hasRequiredAttributes(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedModel_hasRequiredElements(SedModel_t * sm)
 {
@@ -1396,7 +1396,7 @@ SedModel_hasRequiredElements(SedModel_t * sm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedListOfModels_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1410,7 +1410,7 @@ SedListOfModels_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedListOfModels_removeById(SedListOf_t * lo, const char * sid)
 {

@@ -266,7 +266,7 @@ SedSteadyState::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSteadyState_t *
 SedSteadyState_create(unsigned int level, unsigned int version)
 {
@@ -277,7 +277,7 @@ SedSteadyState_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedSteadyState_free(SedSteadyState_t * sss)
 {
@@ -289,7 +289,7 @@ SedSteadyState_free(SedSteadyState_t * sss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSteadyState_t *
 SedSteadyState_clone(SedSteadyState_t * sss)
 {
@@ -307,7 +307,7 @@ SedSteadyState_clone(SedSteadyState_t * sss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSteadyState_hasRequiredAttributes(SedSteadyState_t * sss)
 {

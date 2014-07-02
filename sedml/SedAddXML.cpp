@@ -366,7 +366,7 @@ SedAddXML::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAddXML_t *
 SedAddXML_create(unsigned int level, unsigned int version)
 {
@@ -377,7 +377,7 @@ SedAddXML_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedAddXML_free(SedAddXML_t * saxml)
 {
@@ -389,7 +389,7 @@ SedAddXML_free(SedAddXML_t * saxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAddXML_t *
 SedAddXML_clone(SedAddXML_t * saxml)
 {
@@ -407,7 +407,7 @@ SedAddXML_clone(SedAddXML_t * saxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 XMLNode_t*
 SedAddXML_getNewXML(SedAddXML_t * saxml)
 {
@@ -421,7 +421,7 @@ SedAddXML_getNewXML(SedAddXML_t * saxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAddXML_isSetNewXML(SedAddXML_t * saxml)
 {
@@ -432,7 +432,7 @@ SedAddXML_isSetNewXML(SedAddXML_t * saxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAddXML_setNewXML(SedAddXML_t * saxml, XMLNode* newXML)
 {
@@ -443,7 +443,7 @@ SedAddXML_setNewXML(SedAddXML_t * saxml, XMLNode* newXML)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAddXML_unsetNewXML(SedAddXML_t * saxml)
 {
@@ -454,7 +454,7 @@ SedAddXML_unsetNewXML(SedAddXML_t * saxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAddXML_hasRequiredAttributes(SedAddXML_t * saxml)
 {

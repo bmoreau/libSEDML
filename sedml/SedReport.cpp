@@ -438,7 +438,7 @@ SedReport::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedReport_t *
 SedReport_create(unsigned int level, unsigned int version)
 {
@@ -449,7 +449,7 @@ SedReport_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedReport_free(SedReport_t * sr)
 {
@@ -461,7 +461,7 @@ SedReport_free(SedReport_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedReport_t *
 SedReport_clone(SedReport_t * sr)
 {
@@ -476,56 +476,56 @@ SedReport_clone(SedReport_t * sr)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedReport_addDataSet(SedReport_t * sr, SedDataSet_t * sds)
 {
 	return  (sr != NULL) ? sr->addDataSet(sds) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedReport_createDataSet(SedReport_t * sr)
 {
 	return  (sr != NULL) ? sr->createDataSet() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedReport_getSedListOfDataSets(SedReport_t * sr)
 {
 	return  (sr != NULL) ? (SedListOf_t *)sr->getListOfDataSets() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedReport_getDataSet(SedReport_t * sr, unsigned int n)
 {
 	return  (sr != NULL) ? sr->getDataSet(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedReport_getDataSetById(SedReport_t * sr, const char * sid)
 {
 	return  (sr != NULL) ? sr->getDataSet(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedReport_getNumDataSets(SedReport_t * sr)
 {
 	return  (sr != NULL) ? sr->getNumDataSets() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedReport_removeDataSet(SedReport_t * sr, unsigned int n)
 {
 	return  (sr != NULL) ? sr->removeDataSet(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedDataSet_t *
 SedReport_removeDataSetById(SedReport_t * sr, const char * sid)
 {
@@ -535,7 +535,7 @@ SedReport_removeDataSetById(SedReport_t * sr, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedReport_hasRequiredAttributes(SedReport_t * sr)
 {
@@ -546,7 +546,7 @@ SedReport_hasRequiredAttributes(SedReport_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedReport_hasRequiredElements(SedReport_t * sr)
 {

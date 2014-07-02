@@ -899,7 +899,7 @@ SedListOfTasks::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedTask_create(unsigned int level, unsigned int version)
 {
@@ -910,7 +910,7 @@ SedTask_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedTask_free(SedTask_t * st)
 {
@@ -922,7 +922,7 @@ SedTask_free(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedTask_clone(SedTask_t * st)
 {
@@ -940,7 +940,7 @@ SedTask_clone(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedTask_getId(SedTask_t * st)
 {
@@ -954,7 +954,7 @@ SedTask_getId(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedTask_getName(SedTask_t * st)
 {
@@ -968,7 +968,7 @@ SedTask_getName(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedTask_getModelReference(SedTask_t * st)
 {
@@ -982,7 +982,7 @@ SedTask_getModelReference(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedTask_getSimulationReference(SedTask_t * st)
 {
@@ -996,7 +996,7 @@ SedTask_getSimulationReference(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_isSetId(SedTask_t * st)
 {
@@ -1007,7 +1007,7 @@ SedTask_isSetId(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_isSetName(SedTask_t * st)
 {
@@ -1018,7 +1018,7 @@ SedTask_isSetName(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_isSetModelReference(SedTask_t * st)
 {
@@ -1029,7 +1029,7 @@ SedTask_isSetModelReference(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_isSetSimulationReference(SedTask_t * st)
 {
@@ -1040,7 +1040,7 @@ SedTask_isSetSimulationReference(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_setId(SedTask_t * st, const char * id)
 {
@@ -1051,7 +1051,7 @@ SedTask_setId(SedTask_t * st, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_setName(SedTask_t * st, const char * name)
 {
@@ -1062,7 +1062,7 @@ SedTask_setName(SedTask_t * st, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_setModelReference(SedTask_t * st, const char * modelReference)
 {
@@ -1073,7 +1073,7 @@ SedTask_setModelReference(SedTask_t * st, const char * modelReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_setSimulationReference(SedTask_t * st, const char * simulationReference)
 {
@@ -1084,7 +1084,7 @@ SedTask_setSimulationReference(SedTask_t * st, const char * simulationReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_unsetId(SedTask_t * st)
 {
@@ -1095,7 +1095,7 @@ SedTask_unsetId(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_unsetName(SedTask_t * st)
 {
@@ -1106,7 +1106,7 @@ SedTask_unsetName(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_unsetModelReference(SedTask_t * st)
 {
@@ -1117,7 +1117,7 @@ SedTask_unsetModelReference(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_unsetSimulationReference(SedTask_t * st)
 {
@@ -1128,7 +1128,7 @@ SedTask_unsetSimulationReference(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_hasRequiredAttributes(SedTask_t * st)
 {
@@ -1139,7 +1139,7 @@ SedTask_hasRequiredAttributes(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedTask_hasRequiredElements(SedTask_t * st)
 {
@@ -1150,7 +1150,7 @@ SedTask_hasRequiredElements(SedTask_t * st)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedListOfTasks_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1164,7 +1164,7 @@ SedListOfTasks_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedListOfTasks_removeById(SedListOf_t * lo, const char * sid)
 {

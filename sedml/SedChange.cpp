@@ -662,7 +662,7 @@ SedListOfChanges::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedChange_create(unsigned int level, unsigned int version)
 {
@@ -673,7 +673,7 @@ SedChange_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedChange_free(SedChange_t * sc)
 {
@@ -685,7 +685,7 @@ SedChange_free(SedChange_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedChange_clone(SedChange_t * sc)
 {
@@ -703,7 +703,7 @@ SedChange_clone(SedChange_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedChange_getTarget(SedChange_t * sc)
 {
@@ -717,7 +717,7 @@ SedChange_getTarget(SedChange_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChange_isSetTarget(SedChange_t * sc)
 {
@@ -728,7 +728,7 @@ SedChange_isSetTarget(SedChange_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChange_setTarget(SedChange_t * sc, const char * target)
 {
@@ -739,7 +739,7 @@ SedChange_setTarget(SedChange_t * sc, const char * target)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChange_unsetTarget(SedChange_t * sc)
 {
@@ -750,7 +750,7 @@ SedChange_unsetTarget(SedChange_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedChange_hasRequiredAttributes(SedChange_t * sc)
 {
@@ -761,7 +761,7 @@ SedChange_hasRequiredAttributes(SedChange_t * sc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedListOfChanges_getById(SedListOf_t * lo, const char * sid)
 {
@@ -775,7 +775,7 @@ SedListOfChanges_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedChange_t *
 SedListOfChanges_removeById(SedListOf_t * lo, const char * sid)
 {

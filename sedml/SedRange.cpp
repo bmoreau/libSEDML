@@ -614,7 +614,7 @@ SedListOfRanges::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedRange_create(unsigned int level, unsigned int version)
 {
@@ -625,7 +625,7 @@ SedRange_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedRange_free(SedRange_t * sr)
 {
@@ -637,7 +637,7 @@ SedRange_free(SedRange_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedRange_clone(SedRange_t * sr)
 {
@@ -655,7 +655,7 @@ SedRange_clone(SedRange_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedRange_getId(SedRange_t * sr)
 {
@@ -669,7 +669,7 @@ SedRange_getId(SedRange_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRange_isSetId(SedRange_t * sr)
 {
@@ -680,7 +680,7 @@ SedRange_isSetId(SedRange_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRange_setId(SedRange_t * sr, const char * id)
 {
@@ -691,7 +691,7 @@ SedRange_setId(SedRange_t * sr, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRange_unsetId(SedRange_t * sr)
 {
@@ -702,7 +702,7 @@ SedRange_unsetId(SedRange_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRange_hasRequiredAttributes(SedRange_t * sr)
 {
@@ -713,7 +713,7 @@ SedRange_hasRequiredAttributes(SedRange_t * sr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedListOfRanges_getById(SedListOf_t * lo, const char * sid)
 {
@@ -727,7 +727,7 @@ SedListOfRanges_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedListOfRanges_removeById(SedListOf_t * lo, const char * sid)
 {

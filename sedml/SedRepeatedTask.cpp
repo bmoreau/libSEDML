@@ -885,7 +885,7 @@ SedRepeatedTask::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRepeatedTask_t *
 SedRepeatedTask_create(unsigned int level, unsigned int version)
 {
@@ -896,7 +896,7 @@ SedRepeatedTask_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedRepeatedTask_free(SedRepeatedTask_t * srt)
 {
@@ -908,7 +908,7 @@ SedRepeatedTask_free(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRepeatedTask_t *
 SedRepeatedTask_clone(SedRepeatedTask_t * srt)
 {
@@ -926,7 +926,7 @@ SedRepeatedTask_clone(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedRepeatedTask_getRangeId(SedRepeatedTask_t * srt)
 {
@@ -940,7 +940,7 @@ SedRepeatedTask_getRangeId(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_getResetModel(SedRepeatedTask_t * srt)
 {
@@ -951,7 +951,7 @@ SedRepeatedTask_getResetModel(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_isSetRangeId(SedRepeatedTask_t * srt)
 {
@@ -962,7 +962,7 @@ SedRepeatedTask_isSetRangeId(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_isSetResetModel(SedRepeatedTask_t * srt)
 {
@@ -973,7 +973,7 @@ SedRepeatedTask_isSetResetModel(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_setRangeId(SedRepeatedTask_t * srt, const char * rangeId)
 {
@@ -984,7 +984,7 @@ SedRepeatedTask_setRangeId(SedRepeatedTask_t * srt, const char * rangeId)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_setResetModel(SedRepeatedTask_t * srt, int resetModel)
 {
@@ -995,7 +995,7 @@ SedRepeatedTask_setResetModel(SedRepeatedTask_t * srt, int resetModel)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_unsetRangeId(SedRepeatedTask_t * srt)
 {
@@ -1006,7 +1006,7 @@ SedRepeatedTask_unsetRangeId(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_unsetResetModel(SedRepeatedTask_t * srt)
 {
@@ -1014,182 +1014,182 @@ SedRepeatedTask_unsetResetModel(SedRepeatedTask_t * srt)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_addRange(SedRepeatedTask_t * srt, SedRange_t * sr)
 {
 	return  (srt != NULL) ? srt->addRange(sr) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedUniformRange_t *
 SedRepeatedTask_createUniformRange(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->createUniformRange() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVectorRange_t *
 SedRepeatedTask_createVectorRange(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->createVectorRange() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedFunctionalRange_t *
 SedRepeatedTask_createFunctionalRange(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->createFunctionalRange() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedRepeatedTask_getSedListOfRanges(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? (SedListOf_t *)srt->getListOfRanges() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedRepeatedTask_getRange(SedRepeatedTask_t * srt, unsigned int n)
 {
 	return  (srt != NULL) ? srt->getRange(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedRepeatedTask_getRangeById(SedRepeatedTask_t * srt, const char * sid)
 {
 	return  (srt != NULL) ? srt->getRange(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedRepeatedTask_getNumRanges(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->getNumRanges() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedRepeatedTask_removeRange(SedRepeatedTask_t * srt, unsigned int n)
 {
 	return  (srt != NULL) ? srt->removeRange(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedRange_t *
 SedRepeatedTask_removeRangeById(SedRepeatedTask_t * srt, const char * sid)
 {
 	return  (srt != NULL) ? srt->removeRange(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_addTaskChange(SedRepeatedTask_t * srt, SedSetValue_t * ssv)
 {
 	return  (srt != NULL) ? srt->addTaskChange(ssv) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedRepeatedTask_createTaskChange(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->createTaskChange() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedRepeatedTask_getSedListOfTaskChanges(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? (SedListOf_t *)srt->getListOfTaskChanges() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedRepeatedTask_getTaskChange(SedRepeatedTask_t * srt, unsigned int n)
 {
 	return  (srt != NULL) ? srt->getTaskChange(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedRepeatedTask_getTaskChangeById(SedRepeatedTask_t * srt, const char * sid)
 {
 	return  (srt != NULL) ? srt->getTaskChange(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedRepeatedTask_getNumTaskChanges(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->getNumTaskChanges() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedRepeatedTask_removeTaskChange(SedRepeatedTask_t * srt, unsigned int n)
 {
 	return  (srt != NULL) ? srt->removeTaskChange(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedRepeatedTask_removeTaskChangeById(SedRepeatedTask_t * srt, const char * sid)
 {
 	return  (srt != NULL) ? srt->removeTaskChange(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_addSubTask(SedRepeatedTask_t * srt, SedSubTask_t * sst)
 {
 	return  (srt != NULL) ? srt->addSubTask(sst) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedRepeatedTask_createSubTask(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->createSubTask() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedRepeatedTask_getSedListOfSubTasks(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? (SedListOf_t *)srt->getListOfSubTasks() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedRepeatedTask_getSubTask(SedRepeatedTask_t * srt, unsigned int n)
 {
 	return  (srt != NULL) ? srt->getSubTask(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedRepeatedTask_getSubTaskById(SedRepeatedTask_t * srt, const char * sid)
 {
 	return  (srt != NULL) ? srt->getSubTask(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedRepeatedTask_getNumSubTasks(SedRepeatedTask_t * srt)
 {
 	return  (srt != NULL) ? srt->getNumSubTasks() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedRepeatedTask_removeSubTask(SedRepeatedTask_t * srt, unsigned int n)
 {
 	return  (srt != NULL) ? srt->removeSubTask(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedRepeatedTask_removeSubTaskById(SedRepeatedTask_t * srt, const char * sid)
 {
@@ -1199,7 +1199,7 @@ SedRepeatedTask_removeSubTaskById(SedRepeatedTask_t * srt, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_hasRequiredAttributes(SedRepeatedTask_t * srt)
 {
@@ -1210,7 +1210,7 @@ SedRepeatedTask_hasRequiredAttributes(SedRepeatedTask_t * srt)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRepeatedTask_hasRequiredElements(SedRepeatedTask_t * srt)
 {

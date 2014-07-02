@@ -266,7 +266,7 @@ SedRemoveXML::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRemoveXML_t *
 SedRemoveXML_create(unsigned int level, unsigned int version)
 {
@@ -277,7 +277,7 @@ SedRemoveXML_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedRemoveXML_free(SedRemoveXML_t * srxml)
 {
@@ -289,7 +289,7 @@ SedRemoveXML_free(SedRemoveXML_t * srxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedRemoveXML_t *
 SedRemoveXML_clone(SedRemoveXML_t * srxml)
 {
@@ -307,7 +307,7 @@ SedRemoveXML_clone(SedRemoveXML_t * srxml)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedRemoveXML_hasRequiredAttributes(SedRemoveXML_t * srxml)
 {

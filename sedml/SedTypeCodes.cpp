@@ -85,7 +85,7 @@ const char* SEDML_TYPE_CODE_STRINGS[] =
  * The caller does not own the returned string and is therefore not allowed 
  * to modify it.
  */
-LIBSEDML_EXTERN
+
 const char *
 SedTypeCode_toString (int tc)
 {

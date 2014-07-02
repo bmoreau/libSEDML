@@ -675,7 +675,7 @@ SedComputeChange::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedComputeChange_t *
 SedComputeChange_create(unsigned int level, unsigned int version)
 {
@@ -686,7 +686,7 @@ SedComputeChange_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedComputeChange_free(SedComputeChange_t * scc)
 {
@@ -698,7 +698,7 @@ SedComputeChange_free(SedComputeChange_t * scc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedComputeChange_t *
 SedComputeChange_clone(SedComputeChange_t * scc)
 {
@@ -716,7 +716,7 @@ SedComputeChange_clone(SedComputeChange_t * scc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 ASTNode_t*
 SedComputeChange_getMath(SedComputeChange_t * scc)
 {
@@ -730,7 +730,7 @@ SedComputeChange_getMath(SedComputeChange_t * scc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_isSetMath(SedComputeChange_t * scc)
 {
@@ -741,7 +741,7 @@ SedComputeChange_isSetMath(SedComputeChange_t * scc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_setMath(SedComputeChange_t * scc, ASTNode_t* math)
 {
@@ -752,7 +752,7 @@ SedComputeChange_setMath(SedComputeChange_t * scc, ASTNode_t* math)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_unsetMath(SedComputeChange_t * scc)
 {
@@ -760,112 +760,112 @@ SedComputeChange_unsetMath(SedComputeChange_t * scc)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_addVariable(SedComputeChange_t * scc, SedVariable_t * sv)
 {
 	return  (scc != NULL) ? scc->addVariable(sv) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedComputeChange_createVariable(SedComputeChange_t * scc)
 {
 	return  (scc != NULL) ? scc->createVariable() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedComputeChange_getSedListOfVariables(SedComputeChange_t * scc)
 {
 	return  (scc != NULL) ? (SedListOf_t *)scc->getListOfVariables() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedComputeChange_getVariable(SedComputeChange_t * scc, unsigned int n)
 {
 	return  (scc != NULL) ? scc->getVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedComputeChange_getVariableById(SedComputeChange_t * scc, const char * sid)
 {
 	return  (scc != NULL) ? scc->getVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedComputeChange_getNumVariables(SedComputeChange_t * scc)
 {
 	return  (scc != NULL) ? scc->getNumVariables() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedComputeChange_removeVariable(SedComputeChange_t * scc, unsigned int n)
 {
 	return  (scc != NULL) ? scc->removeVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedComputeChange_removeVariableById(SedComputeChange_t * scc, const char * sid)
 {
 	return  (scc != NULL) ? scc->removeVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_addParameter(SedComputeChange_t * scc, SedParameter_t * sp)
 {
 	return  (scc != NULL) ? scc->addParameter(sp) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedComputeChange_createParameter(SedComputeChange_t * scc)
 {
 	return  (scc != NULL) ? scc->createParameter() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedComputeChange_getSedListOfParameters(SedComputeChange_t * scc)
 {
 	return  (scc != NULL) ? (SedListOf_t *)scc->getListOfParameters() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedComputeChange_getParameter(SedComputeChange_t * scc, unsigned int n)
 {
 	return  (scc != NULL) ? scc->getParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedComputeChange_getParameterById(SedComputeChange_t * scc, const char * sid)
 {
 	return  (scc != NULL) ? scc->getParameter(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedComputeChange_getNumParameters(SedComputeChange_t * scc)
 {
 	return  (scc != NULL) ? scc->getNumParameters() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedComputeChange_removeParameter(SedComputeChange_t * scc, unsigned int n)
 {
 	return  (scc != NULL) ? scc->removeParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedComputeChange_removeParameterById(SedComputeChange_t * scc, const char * sid)
 {
@@ -875,7 +875,7 @@ SedComputeChange_removeParameterById(SedComputeChange_t * scc, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_hasRequiredAttributes(SedComputeChange_t * scc)
 {
@@ -886,7 +886,7 @@ SedComputeChange_hasRequiredAttributes(SedComputeChange_t * scc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedComputeChange_hasRequiredElements(SedComputeChange_t * scc)
 {

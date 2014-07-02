@@ -441,7 +441,7 @@ SedNamespaces::setNamespaces(XMLNamespaces * xmlns)
  * @if notcpp @htmlinclude warn-default-args-in-docs.html @endif@~
  */
 
-LIBSEDML_EXTERN
+
 SedNamespaces_t *
 SedNamespaces_create(unsigned int level, unsigned int version)
 {
@@ -456,7 +456,7 @@ SedNamespaces_create(unsigned int level, unsigned int version)
  *
  * @return the Sed Level of this SedNamespaces_t structure.
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedNamespaces_getLevel(SedNamespaces_t *sbmlns)
 {
@@ -471,7 +471,7 @@ SedNamespaces_getLevel(SedNamespaces_t *sbmlns)
  *
  * @return the Sed Version of this SedNamespaces_t structure.
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedNamespaces_getVersion(SedNamespaces_t *sbmlns)
 {
@@ -486,7 +486,7 @@ SedNamespaces_getVersion(SedNamespaces_t *sbmlns)
  *
  * @return the XMLNamespaces_t structure of this SedNamespaces_t structure.
  */
-LIBSEDML_EXTERN
+
 XMLNamespaces_t *
 SedNamespaces_getNamespaces(SedNamespaces_t *sbmlns)
 {
@@ -504,7 +504,7 @@ SedNamespaces_getNamespaces(SedNamespaces_t *sbmlns)
  * @return a string representing the Sed namespace that reflects the
  * Sed Level and Version specified.
  */
-LIBSEDML_EXTERN
+
 char *
 SedNamespaces_getSedNamespaceURI(unsigned int level, unsigned int version)
 {
@@ -519,7 +519,7 @@ SedNamespaces_getSedNamespaceURI(unsigned int level, unsigned int version)
  * @param sbmlns the SedNamespaces_t structure to add to
  * @param xmlns the XML namespaces to be added.
  */
-LIBSEDML_EXTERN
+
 int
 SedNamespaces_addNamespaces(SedNamespaces_t *sbmlns,
                              const XMLNamespaces_t * xmlns)
@@ -538,7 +538,7 @@ SedNamespaces_addNamespaces(SedNamespaces_t *sbmlns,
  * @return an array of Sed namespaces, or @c NULL if length is @c NULL. The array 
  *         has to be freed by the caller.
  */
-LIBSEDML_EXTERN
+
 SedNamespaces_t **
 SedNamespaces_getSupportedNamespaces(int *length)
 {

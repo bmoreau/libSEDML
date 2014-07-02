@@ -745,7 +745,7 @@ SedListOfOutputs::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedOutput_create(unsigned int level, unsigned int version)
 {
@@ -756,7 +756,7 @@ SedOutput_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedOutput_free(SedOutput_t * so)
 {
@@ -768,7 +768,7 @@ SedOutput_free(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedOutput_clone(SedOutput_t * so)
 {
@@ -786,7 +786,7 @@ SedOutput_clone(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedOutput_getId(SedOutput_t * so)
 {
@@ -800,7 +800,7 @@ SedOutput_getId(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedOutput_getName(SedOutput_t * so)
 {
@@ -814,7 +814,7 @@ SedOutput_getName(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_isSetId(SedOutput_t * so)
 {
@@ -825,7 +825,7 @@ SedOutput_isSetId(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_isSetName(SedOutput_t * so)
 {
@@ -836,7 +836,7 @@ SedOutput_isSetName(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_setId(SedOutput_t * so, const char * id)
 {
@@ -847,7 +847,7 @@ SedOutput_setId(SedOutput_t * so, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_setName(SedOutput_t * so, const char * name)
 {
@@ -858,7 +858,7 @@ SedOutput_setName(SedOutput_t * so, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_unsetId(SedOutput_t * so)
 {
@@ -869,7 +869,7 @@ SedOutput_unsetId(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_unsetName(SedOutput_t * so)
 {
@@ -880,7 +880,7 @@ SedOutput_unsetName(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_hasRequiredAttributes(SedOutput_t * so)
 {
@@ -891,7 +891,7 @@ SedOutput_hasRequiredAttributes(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOutput_hasRequiredElements(SedOutput_t * so)
 {
@@ -902,7 +902,7 @@ SedOutput_hasRequiredElements(SedOutput_t * so)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedListOfOutputs_getById(SedListOf_t * lo, const char * sid)
 {
@@ -916,7 +916,7 @@ SedListOfOutputs_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedListOfOutputs_removeById(SedListOf_t * lo, const char * sid)
 {

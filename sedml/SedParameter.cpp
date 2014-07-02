@@ -722,7 +722,7 @@ SedListOfParameters::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedParameter_create(unsigned int level, unsigned int version)
 {
@@ -733,7 +733,7 @@ SedParameter_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedParameter_free(SedParameter_t * sp)
 {
@@ -745,7 +745,7 @@ SedParameter_free(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedParameter_clone(SedParameter_t * sp)
 {
@@ -763,7 +763,7 @@ SedParameter_clone(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedParameter_getId(SedParameter_t * sp)
 {
@@ -777,7 +777,7 @@ SedParameter_getId(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedParameter_getName(SedParameter_t * sp)
 {
@@ -791,7 +791,7 @@ SedParameter_getName(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedParameter_getValue(SedParameter_t * sp)
 {
@@ -802,7 +802,7 @@ SedParameter_getValue(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_isSetId(SedParameter_t * sp)
 {
@@ -813,7 +813,7 @@ SedParameter_isSetId(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_isSetName(SedParameter_t * sp)
 {
@@ -824,7 +824,7 @@ SedParameter_isSetName(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_isSetValue(SedParameter_t * sp)
 {
@@ -835,7 +835,7 @@ SedParameter_isSetValue(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_setId(SedParameter_t * sp, const char * id)
 {
@@ -846,7 +846,7 @@ SedParameter_setId(SedParameter_t * sp, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_setName(SedParameter_t * sp, const char * name)
 {
@@ -857,7 +857,7 @@ SedParameter_setName(SedParameter_t * sp, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_setValue(SedParameter_t * sp, double value)
 {
@@ -868,7 +868,7 @@ SedParameter_setValue(SedParameter_t * sp, double value)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_unsetId(SedParameter_t * sp)
 {
@@ -879,7 +879,7 @@ SedParameter_unsetId(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_unsetName(SedParameter_t * sp)
 {
@@ -890,7 +890,7 @@ SedParameter_unsetName(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_unsetValue(SedParameter_t * sp)
 {
@@ -901,7 +901,7 @@ SedParameter_unsetValue(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedParameter_hasRequiredAttributes(SedParameter_t * sp)
 {
@@ -912,7 +912,7 @@ SedParameter_hasRequiredAttributes(SedParameter_t * sp)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedListOfParameters_getById(SedListOf_t * lo, const char * sid)
 {
@@ -926,7 +926,7 @@ SedListOfParameters_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedListOfParameters_removeById(SedListOf_t * lo, const char * sid)
 {

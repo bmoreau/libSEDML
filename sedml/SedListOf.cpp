@@ -594,7 +594,7 @@ SedListOf::writeAttributes (XMLOutputStream& stream) const
  *
  * @return a pointer to created SedListOf.
  */
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedListOf_create (unsigned int level, unsigned int version)
 {
@@ -607,7 +607,7 @@ SedListOf_create (unsigned int level, unsigned int version)
  *
  * This function assumes each item in the list is derived from SedBase.
  */
-LIBSEDML_EXTERN
+
 void
 SedListOf_free (SedListOf_t *lo)
 {
@@ -619,7 +619,7 @@ SedListOf_free (SedListOf_t *lo)
 /**
  * @return a (deep) copy of this SedListOf items.
  */
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedListOf_clone (const SedListOf_t *lo)
 {
@@ -630,7 +630,7 @@ SedListOf_clone (const SedListOf_t *lo)
 /**
  * Adds a copy of item to the end of this SedListOf items.
  */
-LIBSEDML_EXTERN
+
 int
 SedListOf_append (SedListOf_t *lo, const SedBase *item)
 {
@@ -644,7 +644,7 @@ SedListOf_append (SedListOf_t *lo, const SedBase *item)
 /**
  * Adds the given item to the end of this SedListOf items.
  */
-LIBSEDML_EXTERN
+
 int
 SedListOf_appendAndOwn (SedListOf_t *lo, SedBase_t *item)
 {
@@ -658,7 +658,7 @@ SedListOf_appendAndOwn (SedListOf_t *lo, SedBase_t *item)
 /**
  * Adds clones of the given items from the second list to the end of this SedListOf items.
  */
-LIBSEDML_EXTERN
+
 int
 SedListOf_appendFrom (SedListOf_t *lo, SedListOf_t *list)
 {
@@ -672,7 +672,7 @@ SedListOf_appendFrom (SedListOf_t *lo, SedListOf_t *list)
 /**
  * inserts a copy of item to this SedListOf items at the given position.
  */
-LIBSEDML_EXTERN
+
 int
 SedListOf_insert (SedListOf_t *lo, int location, const SedBase_t *item)
 {
@@ -686,7 +686,7 @@ SedListOf_insert (SedListOf_t *lo, int location, const SedBase_t *item)
 /**
  * inserts the item to this SedListOf items at the given position.
  */
-LIBSEDML_EXTERN
+
 int
 SedListOf_insertAndOwn (SedListOf_t *lo, int location, SedBase_t *item)
 {
@@ -700,7 +700,7 @@ SedListOf_insertAndOwn (SedListOf_t *lo, int location, SedBase_t *item)
 /**
  * Returns the nth item in this SedListOf items.
  */
-LIBSEDML_EXTERN
+
 SedBase *
 SedListOf_get (SedListOf_t *lo, unsigned int n)
 {
@@ -712,7 +712,7 @@ SedListOf_get (SedListOf_t *lo, unsigned int n)
  * @return item in this SedListOf items with the given @p id or @c NULL if no such
  * item exists.
  */
-//LIBSEDML_EXTERN
+//
 //SedBase *
 //SedListOf_getById (SedListOf_t *lo, const char *sid)
 //{
@@ -729,7 +729,7 @@ SedListOf_get (SedListOf_t *lo, unsigned int n)
  * caller is responsible for deleting all items (In this case, pointers to all 
  * items should be stored elsewhere before calling this function by the caller).
  */
-LIBSEDML_EXTERN
+
 void
 SedListOf_clear (SedListOf_t *lo, int doDelete)
 {
@@ -743,7 +743,7 @@ SedListOf_clear (SedListOf_t *lo, int doDelete)
  * it.  The caller owns the returned item and is responsible for deleting
  * it.
  */
-LIBSEDML_EXTERN
+
 SedBase *
 SedListOf_remove (SedListOf_t *lo, unsigned int n)
 {
@@ -756,7 +756,7 @@ SedListOf_remove (SedListOf_t *lo, unsigned int n)
  * item exists.  The caller owns the returned item and is repsonsible for
  * deleting it.
  */
-//LIBSEDML_EXTERN
+//
 //SedBase *
 //SedListOf_removeById (SedListOf_t *lo, const char *sid)
 //{
@@ -767,7 +767,7 @@ SedListOf_remove (SedListOf_t *lo, unsigned int n)
 /**
  * Returns the number of items in this SedListOf items.
  */
-LIBSEDML_EXTERN
+
 unsigned int
 SedListOf_size (const SedListOf_t *lo)
 {
@@ -779,7 +779,7 @@ SedListOf_size (const SedListOf_t *lo)
  * @return the typecode (int) of this Sed object or SEDML_UNKNOWN
  * SEDML_UNKNOWN (default).
  */
-LIBSEDML_EXTERN
+
 int
 SedListOf_getItemTypeCode (const SedListOf_t *lo)
 {

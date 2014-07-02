@@ -521,7 +521,7 @@ SedAlgorithm::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithm_t *
 SedAlgorithm_create(unsigned int level, unsigned int version)
 {
@@ -532,7 +532,7 @@ SedAlgorithm_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedAlgorithm_free(SedAlgorithm_t * sa)
 {
@@ -544,7 +544,7 @@ SedAlgorithm_free(SedAlgorithm_t * sa)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithm_t *
 SedAlgorithm_clone(SedAlgorithm_t * sa)
 {
@@ -562,7 +562,7 @@ SedAlgorithm_clone(SedAlgorithm_t * sa)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedAlgorithm_getKisaoID(SedAlgorithm_t * sa)
 {
@@ -576,7 +576,7 @@ SedAlgorithm_getKisaoID(SedAlgorithm_t * sa)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithm_isSetKisaoID(SedAlgorithm_t * sa)
 {
@@ -587,7 +587,7 @@ SedAlgorithm_isSetKisaoID(SedAlgorithm_t * sa)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithm_setKisaoID(SedAlgorithm_t * sa, const char * kisaoID)
 {
@@ -598,7 +598,7 @@ SedAlgorithm_setKisaoID(SedAlgorithm_t * sa, const char * kisaoID)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithm_unsetKisaoID(SedAlgorithm_t * sa)
 {
@@ -606,56 +606,56 @@ SedAlgorithm_unsetKisaoID(SedAlgorithm_t * sa)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedAlgorithm_addAlgorithmParameter(SedAlgorithm_t * sa, SedAlgorithmParameter_t * sap)
 {
 	return  (sa != NULL) ? sa->addAlgorithmParameter(sap) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithm_createAlgorithmParameter(SedAlgorithm_t * sa)
 {
 	return  (sa != NULL) ? sa->createAlgorithmParameter() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedAlgorithm_getSedListOfAlgorithmParameters(SedAlgorithm_t * sa)
 {
 	return  (sa != NULL) ? (SedListOf_t *)sa->getListOfAlgorithmParameters() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithm_getAlgorithmParameter(SedAlgorithm_t * sa, unsigned int n)
 {
 	return  (sa != NULL) ? sa->getAlgorithmParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithm_getAlgorithmParameterById(SedAlgorithm_t * sa, const char * sid)
 {
 	return  (sa != NULL) ? sa->getAlgorithmParameter(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedAlgorithm_getNumAlgorithmParameters(SedAlgorithm_t * sa)
 {
 	return  (sa != NULL) ? sa->getNumAlgorithmParameters() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithm_removeAlgorithmParameter(SedAlgorithm_t * sa, unsigned int n)
 {
 	return  (sa != NULL) ? sa->removeAlgorithmParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithm_removeAlgorithmParameterById(SedAlgorithm_t * sa, const char * sid)
 {
@@ -665,7 +665,7 @@ SedAlgorithm_removeAlgorithmParameterById(SedAlgorithm_t * sa, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithm_hasRequiredAttributes(SedAlgorithm_t * sa)
 {
@@ -676,7 +676,7 @@ SedAlgorithm_hasRequiredAttributes(SedAlgorithm_t * sa)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithm_hasRequiredElements(SedAlgorithm_t * sa)
 {

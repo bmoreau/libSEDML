@@ -300,7 +300,7 @@ SedReader::readInternal (const char* content, bool isFile)
 /**
  * Creates a new SedReader and returns it. 
  */
-LIBSEDML_EXTERN
+
 SedReader_t *
 SedReader_create ()
 {
@@ -311,7 +311,7 @@ SedReader_create ()
 /**
  * Frees the given SedReader.
  */
-LIBSEDML_EXTERN
+
 void
 SedReader_free (SedReader_t *sr)
 {
@@ -343,7 +343,7 @@ SedReader_free (SedReader_t *sr)
  *
  * @return a pointer to the SedDocument read.
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 SedReader_readSedML (SedReader_t *sr, const char *filename)
 {
@@ -378,7 +378,7 @@ SedReader_readSedML (SedReader_t *sr, const char *filename)
  *
  * @return a pointer to the SedDocument read.
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 SedReader_readSedMLFromFile (SedReader_t *sr, const char *filename)
 {
@@ -404,7 +404,7 @@ SedReader_readSedMLFromFile (SedReader_t *sr, const char *filename)
  *
  * @return a pointer to the SedDocument read.
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 SedReader_readSedMLFromString (SedReader_t *sr, const char *xml)
 {
@@ -422,7 +422,7 @@ SedReader_readSedMLFromString (SedReader_t *sr, const char *xml)
  *
  * @return @c non-zero if libSed is linked with zlib, @c zero otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedReader_hasZlib (void)
 {
@@ -436,7 +436,7 @@ SedReader_hasZlib (void)
  *
  * @return @c non-zero if libSed is linked with bzip2, @c zero otherwise.
  */
-LIBSEDML_EXTERN
+
 int
 SedReader_hasBzip2 (void)
 {
@@ -483,7 +483,7 @@ SedReader_hasBzip2 (void)
  *
  * @return a pointer to the SedDocument read.
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 readSedML (const char *filename)
 {
@@ -531,7 +531,7 @@ readSedML (const char *filename)
  *
  * @return a pointer to the SedDocument read.
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 readSedMLFromFile (const char *filename)
 {
@@ -555,7 +555,7 @@ readSedMLFromFile (const char *filename)
  *
  * @return a pointer to the SedDocument read.
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 readSedMLFromString (const char *xml)
 {

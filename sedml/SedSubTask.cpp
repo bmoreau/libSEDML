@@ -654,7 +654,7 @@ SedListOfSubTasks::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedSubTask_create(unsigned int level, unsigned int version)
 {
@@ -665,7 +665,7 @@ SedSubTask_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedSubTask_free(SedSubTask_t * sst)
 {
@@ -677,7 +677,7 @@ SedSubTask_free(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedSubTask_clone(SedSubTask_t * sst)
 {
@@ -695,7 +695,7 @@ SedSubTask_clone(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_getOrder(SedSubTask_t * sst)
 {
@@ -706,7 +706,7 @@ SedSubTask_getOrder(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSubTask_getTask(SedSubTask_t * sst)
 {
@@ -720,7 +720,7 @@ SedSubTask_getTask(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_isSetOrder(SedSubTask_t * sst)
 {
@@ -731,7 +731,7 @@ SedSubTask_isSetOrder(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_isSetTask(SedSubTask_t * sst)
 {
@@ -742,7 +742,7 @@ SedSubTask_isSetTask(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_setOrder(SedSubTask_t * sst, int order)
 {
@@ -753,7 +753,7 @@ SedSubTask_setOrder(SedSubTask_t * sst, int order)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_setTask(SedSubTask_t * sst, const char * task)
 {
@@ -764,7 +764,7 @@ SedSubTask_setTask(SedSubTask_t * sst, const char * task)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_unsetOrder(SedSubTask_t * sst)
 {
@@ -775,7 +775,7 @@ SedSubTask_unsetOrder(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_unsetTask(SedSubTask_t * sst)
 {
@@ -786,7 +786,7 @@ SedSubTask_unsetTask(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSubTask_hasRequiredAttributes(SedSubTask_t * sst)
 {
@@ -797,7 +797,7 @@ SedSubTask_hasRequiredAttributes(SedSubTask_t * sst)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedListOfSubTasks_getById(SedListOf_t * lo, const char * sid)
 {
@@ -811,7 +811,7 @@ SedListOfSubTasks_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSubTask_t *
 SedListOfSubTasks_removeById(SedListOf_t * lo, const char * sid)
 {

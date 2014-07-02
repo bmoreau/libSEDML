@@ -1003,7 +1003,7 @@ SedListOfFunctionalRanges::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedFunctionalRange_t *
 SedFunctionalRange_create(unsigned int level, unsigned int version)
 {
@@ -1014,7 +1014,7 @@ SedFunctionalRange_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedFunctionalRange_free(SedFunctionalRange_t * sfr)
 {
@@ -1026,7 +1026,7 @@ SedFunctionalRange_free(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedFunctionalRange_t *
 SedFunctionalRange_clone(SedFunctionalRange_t * sfr)
 {
@@ -1044,7 +1044,7 @@ SedFunctionalRange_clone(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedFunctionalRange_getRange(SedFunctionalRange_t * sfr)
 {
@@ -1058,7 +1058,7 @@ SedFunctionalRange_getRange(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 ASTNode_t*
 SedFunctionalRange_getMath(SedFunctionalRange_t * sfr)
 {
@@ -1072,7 +1072,7 @@ SedFunctionalRange_getMath(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_isSetRange(SedFunctionalRange_t * sfr)
 {
@@ -1083,7 +1083,7 @@ SedFunctionalRange_isSetRange(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_isSetMath(SedFunctionalRange_t * sfr)
 {
@@ -1094,7 +1094,7 @@ SedFunctionalRange_isSetMath(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_setRange(SedFunctionalRange_t * sfr, const char * range)
 {
@@ -1105,7 +1105,7 @@ SedFunctionalRange_setRange(SedFunctionalRange_t * sfr, const char * range)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_setMath(SedFunctionalRange_t * sfr, ASTNode_t* math)
 {
@@ -1116,7 +1116,7 @@ SedFunctionalRange_setMath(SedFunctionalRange_t * sfr, ASTNode_t* math)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_unsetRange(SedFunctionalRange_t * sfr)
 {
@@ -1127,7 +1127,7 @@ SedFunctionalRange_unsetRange(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_unsetMath(SedFunctionalRange_t * sfr)
 {
@@ -1135,112 +1135,112 @@ SedFunctionalRange_unsetMath(SedFunctionalRange_t * sfr)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_addVariable(SedFunctionalRange_t * sfr, SedVariable_t * sv)
 {
 	return  (sfr != NULL) ? sfr->addVariable(sv) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedFunctionalRange_createVariable(SedFunctionalRange_t * sfr)
 {
 	return  (sfr != NULL) ? sfr->createVariable() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedFunctionalRange_getSedListOfVariables(SedFunctionalRange_t * sfr)
 {
 	return  (sfr != NULL) ? (SedListOf_t *)sfr->getListOfVariables() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedFunctionalRange_getVariable(SedFunctionalRange_t * sfr, unsigned int n)
 {
 	return  (sfr != NULL) ? sfr->getVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedFunctionalRange_getVariableById(SedFunctionalRange_t * sfr, const char * sid)
 {
 	return  (sfr != NULL) ? sfr->getVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedFunctionalRange_getNumVariables(SedFunctionalRange_t * sfr)
 {
 	return  (sfr != NULL) ? sfr->getNumVariables() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedFunctionalRange_removeVariable(SedFunctionalRange_t * sfr, unsigned int n)
 {
 	return  (sfr != NULL) ? sfr->removeVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedFunctionalRange_removeVariableById(SedFunctionalRange_t * sfr, const char * sid)
 {
 	return  (sfr != NULL) ? sfr->removeVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_addParameter(SedFunctionalRange_t * sfr, SedParameter_t * sp)
 {
 	return  (sfr != NULL) ? sfr->addParameter(sp) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedFunctionalRange_createParameter(SedFunctionalRange_t * sfr)
 {
 	return  (sfr != NULL) ? sfr->createParameter() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedFunctionalRange_getSedListOfParameters(SedFunctionalRange_t * sfr)
 {
 	return  (sfr != NULL) ? (SedListOf_t *)sfr->getListOfParameters() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedFunctionalRange_getParameter(SedFunctionalRange_t * sfr, unsigned int n)
 {
 	return  (sfr != NULL) ? sfr->getParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedFunctionalRange_getParameterById(SedFunctionalRange_t * sfr, const char * sid)
 {
 	return  (sfr != NULL) ? sfr->getParameter(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedFunctionalRange_getNumParameters(SedFunctionalRange_t * sfr)
 {
 	return  (sfr != NULL) ? sfr->getNumParameters() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedFunctionalRange_removeParameter(SedFunctionalRange_t * sfr, unsigned int n)
 {
 	return  (sfr != NULL) ? sfr->removeParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedFunctionalRange_removeParameterById(SedFunctionalRange_t * sfr, const char * sid)
 {
@@ -1250,7 +1250,7 @@ SedFunctionalRange_removeParameterById(SedFunctionalRange_t * sfr, const char * 
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_hasRequiredAttributes(SedFunctionalRange_t * sfr)
 {
@@ -1261,7 +1261,7 @@ SedFunctionalRange_hasRequiredAttributes(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedFunctionalRange_hasRequiredElements(SedFunctionalRange_t * sfr)
 {
@@ -1272,7 +1272,7 @@ SedFunctionalRange_hasRequiredElements(SedFunctionalRange_t * sfr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedFunctionalRange_t *
 SedListOfFunctionalRanges_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1286,7 +1286,7 @@ SedListOfFunctionalRanges_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedFunctionalRange_t *
 SedListOfFunctionalRanges_removeById(SedListOf_t * lo, const char * sid)
 {

@@ -567,7 +567,7 @@ SedUniformRange::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedUniformRange_t *
 SedUniformRange_create(unsigned int level, unsigned int version)
 {
@@ -578,7 +578,7 @@ SedUniformRange_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedUniformRange_free(SedUniformRange_t * sur)
 {
@@ -590,7 +590,7 @@ SedUniformRange_free(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedUniformRange_t *
 SedUniformRange_clone(SedUniformRange_t * sur)
 {
@@ -608,7 +608,7 @@ SedUniformRange_clone(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedUniformRange_getStart(SedUniformRange_t * sur)
 {
@@ -619,7 +619,7 @@ SedUniformRange_getStart(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedUniformRange_getEnd(SedUniformRange_t * sur)
 {
@@ -630,7 +630,7 @@ SedUniformRange_getEnd(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_getNumberOfPoints(SedUniformRange_t * sur)
 {
@@ -641,7 +641,7 @@ SedUniformRange_getNumberOfPoints(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedUniformRange_getType(SedUniformRange_t * sur)
 {
@@ -655,7 +655,7 @@ SedUniformRange_getType(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_isSetStart(SedUniformRange_t * sur)
 {
@@ -666,7 +666,7 @@ SedUniformRange_isSetStart(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_isSetEnd(SedUniformRange_t * sur)
 {
@@ -677,7 +677,7 @@ SedUniformRange_isSetEnd(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_isSetNumberOfPoints(SedUniformRange_t * sur)
 {
@@ -688,7 +688,7 @@ SedUniformRange_isSetNumberOfPoints(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_isSetType(SedUniformRange_t * sur)
 {
@@ -699,7 +699,7 @@ SedUniformRange_isSetType(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_setStart(SedUniformRange_t * sur, double start)
 {
@@ -710,7 +710,7 @@ SedUniformRange_setStart(SedUniformRange_t * sur, double start)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_setEnd(SedUniformRange_t * sur, double end)
 {
@@ -721,7 +721,7 @@ SedUniformRange_setEnd(SedUniformRange_t * sur, double end)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_setNumberOfPoints(SedUniformRange_t * sur, int numberOfPoints)
 {
@@ -732,7 +732,7 @@ SedUniformRange_setNumberOfPoints(SedUniformRange_t * sur, int numberOfPoints)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_setType(SedUniformRange_t * sur, const char * type)
 {
@@ -743,7 +743,7 @@ SedUniformRange_setType(SedUniformRange_t * sur, const char * type)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_unsetStart(SedUniformRange_t * sur)
 {
@@ -754,7 +754,7 @@ SedUniformRange_unsetStart(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_unsetEnd(SedUniformRange_t * sur)
 {
@@ -765,7 +765,7 @@ SedUniformRange_unsetEnd(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_unsetNumberOfPoints(SedUniformRange_t * sur)
 {
@@ -776,7 +776,7 @@ SedUniformRange_unsetNumberOfPoints(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_unsetType(SedUniformRange_t * sur)
 {
@@ -787,7 +787,7 @@ SedUniformRange_unsetType(SedUniformRange_t * sur)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformRange_hasRequiredAttributes(SedUniformRange_t * sur)
 {

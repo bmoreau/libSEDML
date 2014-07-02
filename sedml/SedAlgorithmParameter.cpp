@@ -657,7 +657,7 @@ SedListOfAlgorithmParameters::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithmParameter_create(unsigned int level, unsigned int version)
 {
@@ -668,7 +668,7 @@ SedAlgorithmParameter_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedAlgorithmParameter_free(SedAlgorithmParameter_t * sap)
 {
@@ -680,7 +680,7 @@ SedAlgorithmParameter_free(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedAlgorithmParameter_clone(SedAlgorithmParameter_t * sap)
 {
@@ -698,7 +698,7 @@ SedAlgorithmParameter_clone(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedAlgorithmParameter_getKisaoID(SedAlgorithmParameter_t * sap)
 {
@@ -712,7 +712,7 @@ SedAlgorithmParameter_getKisaoID(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedAlgorithmParameter_getValue(SedAlgorithmParameter_t * sap)
 {
@@ -726,7 +726,7 @@ SedAlgorithmParameter_getValue(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_isSetKisaoID(SedAlgorithmParameter_t * sap)
 {
@@ -737,7 +737,7 @@ SedAlgorithmParameter_isSetKisaoID(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_isSetValue(SedAlgorithmParameter_t * sap)
 {
@@ -748,7 +748,7 @@ SedAlgorithmParameter_isSetValue(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_setKisaoID(SedAlgorithmParameter_t * sap, const char * kisaoID)
 {
@@ -759,7 +759,7 @@ SedAlgorithmParameter_setKisaoID(SedAlgorithmParameter_t * sap, const char * kis
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_setValue(SedAlgorithmParameter_t * sap, const char * value)
 {
@@ -770,7 +770,7 @@ SedAlgorithmParameter_setValue(SedAlgorithmParameter_t * sap, const char * value
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_unsetKisaoID(SedAlgorithmParameter_t * sap)
 {
@@ -781,7 +781,7 @@ SedAlgorithmParameter_unsetKisaoID(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_unsetValue(SedAlgorithmParameter_t * sap)
 {
@@ -792,7 +792,7 @@ SedAlgorithmParameter_unsetValue(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedAlgorithmParameter_hasRequiredAttributes(SedAlgorithmParameter_t * sap)
 {
@@ -803,7 +803,7 @@ SedAlgorithmParameter_hasRequiredAttributes(SedAlgorithmParameter_t * sap)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedListOfAlgorithmParameters_getById(SedListOf_t * lo, const char * sid)
 {
@@ -817,7 +817,7 @@ SedListOfAlgorithmParameters_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithmParameter_t *
 SedListOfAlgorithmParameters_removeById(SedListOf_t * lo, const char * sid)
 {

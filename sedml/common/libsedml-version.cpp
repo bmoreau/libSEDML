@@ -44,7 +44,6 @@ LIBSEDML_CPP_NAMESPACE_BEGIN
  *
  * @return the libSEDML version as an integer: version 1.2.3 becomes 10203.
  */
-LIBSEDML_EXTERN
 int 
 getLibSEDMLVersion () 
 { 
@@ -57,7 +56,6 @@ getLibSEDMLVersion ()
  *
  * @return the libSEDML version as a string of the form "1.2.3".
  */
-LIBSEDML_EXTERN
 const char* 
 getLibSEDMLDottedVersion () 
 { 
@@ -70,7 +68,6 @@ getLibSEDMLDottedVersion ()
  *
  * @return the libSEDML version as a string: version 1.2.3 becomes "10203".
  */
-LIBSEDML_EXTERN
 const char* 
 getLibSEDMLVersionString () 
 { 

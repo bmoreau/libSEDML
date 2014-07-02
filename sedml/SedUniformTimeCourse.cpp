@@ -556,7 +556,7 @@ SedUniformTimeCourse::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedUniformTimeCourse_t *
 SedUniformTimeCourse_create(unsigned int level, unsigned int version)
 {
@@ -567,7 +567,7 @@ SedUniformTimeCourse_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedUniformTimeCourse_free(SedUniformTimeCourse_t * sutc)
 {
@@ -579,7 +579,7 @@ SedUniformTimeCourse_free(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedUniformTimeCourse_t *
 SedUniformTimeCourse_clone(SedUniformTimeCourse_t * sutc)
 {
@@ -597,7 +597,7 @@ SedUniformTimeCourse_clone(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedUniformTimeCourse_getInitialTime(SedUniformTimeCourse_t * sutc)
 {
@@ -608,7 +608,7 @@ SedUniformTimeCourse_getInitialTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedUniformTimeCourse_getOutputStartTime(SedUniformTimeCourse_t * sutc)
 {
@@ -619,7 +619,7 @@ SedUniformTimeCourse_getOutputStartTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedUniformTimeCourse_getOutputEndTime(SedUniformTimeCourse_t * sutc)
 {
@@ -630,7 +630,7 @@ SedUniformTimeCourse_getOutputEndTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_getNumberOfPoints(SedUniformTimeCourse_t * sutc)
 {
@@ -641,7 +641,7 @@ SedUniformTimeCourse_getNumberOfPoints(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_isSetInitialTime(SedUniformTimeCourse_t * sutc)
 {
@@ -652,7 +652,7 @@ SedUniformTimeCourse_isSetInitialTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_isSetOutputStartTime(SedUniformTimeCourse_t * sutc)
 {
@@ -663,7 +663,7 @@ SedUniformTimeCourse_isSetOutputStartTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_isSetOutputEndTime(SedUniformTimeCourse_t * sutc)
 {
@@ -674,7 +674,7 @@ SedUniformTimeCourse_isSetOutputEndTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_isSetNumberOfPoints(SedUniformTimeCourse_t * sutc)
 {
@@ -685,7 +685,7 @@ SedUniformTimeCourse_isSetNumberOfPoints(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_setInitialTime(SedUniformTimeCourse_t * sutc, double initialTime)
 {
@@ -696,7 +696,7 @@ SedUniformTimeCourse_setInitialTime(SedUniformTimeCourse_t * sutc, double initia
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_setOutputStartTime(SedUniformTimeCourse_t * sutc, double outputStartTime)
 {
@@ -707,7 +707,7 @@ SedUniformTimeCourse_setOutputStartTime(SedUniformTimeCourse_t * sutc, double ou
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_setOutputEndTime(SedUniformTimeCourse_t * sutc, double outputEndTime)
 {
@@ -718,7 +718,7 @@ SedUniformTimeCourse_setOutputEndTime(SedUniformTimeCourse_t * sutc, double outp
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_setNumberOfPoints(SedUniformTimeCourse_t * sutc, int numberOfPoints)
 {
@@ -729,7 +729,7 @@ SedUniformTimeCourse_setNumberOfPoints(SedUniformTimeCourse_t * sutc, int number
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_unsetInitialTime(SedUniformTimeCourse_t * sutc)
 {
@@ -740,7 +740,7 @@ SedUniformTimeCourse_unsetInitialTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_unsetOutputStartTime(SedUniformTimeCourse_t * sutc)
 {
@@ -751,7 +751,7 @@ SedUniformTimeCourse_unsetOutputStartTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_unsetOutputEndTime(SedUniformTimeCourse_t * sutc)
 {
@@ -762,7 +762,7 @@ SedUniformTimeCourse_unsetOutputEndTime(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_unsetNumberOfPoints(SedUniformTimeCourse_t * sutc)
 {
@@ -773,7 +773,7 @@ SedUniformTimeCourse_unsetNumberOfPoints(SedUniformTimeCourse_t * sutc)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedUniformTimeCourse_hasRequiredAttributes(SedUniformTimeCourse_t * sutc)
 {

@@ -340,7 +340,7 @@ SedOneStep::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedOneStep_t *
 SedOneStep_create(unsigned int level, unsigned int version)
 {
@@ -351,7 +351,7 @@ SedOneStep_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedOneStep_free(SedOneStep_t * sos)
 {
@@ -363,7 +363,7 @@ SedOneStep_free(SedOneStep_t * sos)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedOneStep_t *
 SedOneStep_clone(SedOneStep_t * sos)
 {
@@ -381,7 +381,7 @@ SedOneStep_clone(SedOneStep_t * sos)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 double
 SedOneStep_getStep(SedOneStep_t * sos)
 {
@@ -392,7 +392,7 @@ SedOneStep_getStep(SedOneStep_t * sos)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOneStep_isSetStep(SedOneStep_t * sos)
 {
@@ -403,7 +403,7 @@ SedOneStep_isSetStep(SedOneStep_t * sos)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOneStep_setStep(SedOneStep_t * sos, double step)
 {
@@ -414,7 +414,7 @@ SedOneStep_setStep(SedOneStep_t * sos, double step)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOneStep_unsetStep(SedOneStep_t * sos)
 {
@@ -425,7 +425,7 @@ SedOneStep_unsetStep(SedOneStep_t * sos)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedOneStep_hasRequiredAttributes(SedOneStep_t * sos)
 {

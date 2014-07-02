@@ -420,7 +420,7 @@ SedVectorRange::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedVectorRange_t *
 SedVectorRange_create(unsigned int level, unsigned int version)
 {
@@ -431,7 +431,7 @@ SedVectorRange_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedVectorRange_free(SedVectorRange_t * svr)
 {
@@ -443,7 +443,7 @@ SedVectorRange_free(SedVectorRange_t * svr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedVectorRange_t *
 SedVectorRange_clone(SedVectorRange_t * svr)
 {
@@ -467,7 +467,7 @@ SedVectorRange_clone(SedVectorRange_t * svr)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVectorRange_hasRequiredAttributes(SedVectorRange_t * svr)
 {

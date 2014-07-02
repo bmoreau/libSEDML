@@ -438,7 +438,7 @@ SedPlot2D::writeAttributes (XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedPlot2D_t *
 SedPlot2D_create(unsigned int level, unsigned int version)
 {
@@ -449,7 +449,7 @@ SedPlot2D_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedPlot2D_free(SedPlot2D_t * spd)
 {
@@ -461,7 +461,7 @@ SedPlot2D_free(SedPlot2D_t * spd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedPlot2D_t *
 SedPlot2D_clone(SedPlot2D_t * spd)
 {
@@ -476,56 +476,56 @@ SedPlot2D_clone(SedPlot2D_t * spd)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedPlot2D_addCurve(SedPlot2D_t * spd, SedCurve_t * sc)
 {
 	return  (spd != NULL) ? spd->addCurve(sc) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedPlot2D_createCurve(SedPlot2D_t * spd)
 {
 	return  (spd != NULL) ? spd->createCurve() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedPlot2D_getSedListOfCurves(SedPlot2D_t * spd)
 {
 	return  (spd != NULL) ? (SedListOf_t *)spd->getListOfCurves() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedPlot2D_getCurve(SedPlot2D_t * spd, unsigned int n)
 {
 	return  (spd != NULL) ? spd->getCurve(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedPlot2D_getCurveById(SedPlot2D_t * spd, const char * sid)
 {
 	return  (spd != NULL) ? spd->getCurve(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedPlot2D_getNumCurves(SedPlot2D_t * spd)
 {
 	return  (spd != NULL) ? spd->getNumCurves() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedPlot2D_removeCurve(SedPlot2D_t * spd, unsigned int n)
 {
 	return  (spd != NULL) ? spd->removeCurve(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedCurve_t *
 SedPlot2D_removeCurveById(SedPlot2D_t * spd, const char * sid)
 {
@@ -535,7 +535,7 @@ SedPlot2D_removeCurveById(SedPlot2D_t * spd, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedPlot2D_hasRequiredAttributes(SedPlot2D_t * spd)
 {
@@ -546,7 +546,7 @@ SedPlot2D_hasRequiredAttributes(SedPlot2D_t * spd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedPlot2D_hasRequiredElements(SedPlot2D_t * spd)
 {

@@ -1251,7 +1251,7 @@ SedListOfTaskChanges::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedSetValue_create(unsigned int level, unsigned int version)
 {
@@ -1262,7 +1262,7 @@ SedSetValue_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedSetValue_free(SedSetValue_t * ssv)
 {
@@ -1274,7 +1274,7 @@ SedSetValue_free(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedSetValue_clone(SedSetValue_t * ssv)
 {
@@ -1292,7 +1292,7 @@ SedSetValue_clone(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSetValue_getRange(SedSetValue_t * ssv)
 {
@@ -1306,7 +1306,7 @@ SedSetValue_getRange(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSetValue_getModelReference(SedSetValue_t * ssv)
 {
@@ -1320,7 +1320,7 @@ SedSetValue_getModelReference(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSetValue_getSymbol(SedSetValue_t * ssv)
 {
@@ -1334,7 +1334,7 @@ SedSetValue_getSymbol(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSetValue_getTarget(SedSetValue_t * ssv)
 {
@@ -1348,7 +1348,7 @@ SedSetValue_getTarget(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 ASTNode_t*
 SedSetValue_getMath(SedSetValue_t * ssv)
 {
@@ -1362,7 +1362,7 @@ SedSetValue_getMath(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_isSetRange(SedSetValue_t * ssv)
 {
@@ -1373,7 +1373,7 @@ SedSetValue_isSetRange(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_isSetModelReference(SedSetValue_t * ssv)
 {
@@ -1384,7 +1384,7 @@ SedSetValue_isSetModelReference(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_isSetSymbol(SedSetValue_t * ssv)
 {
@@ -1395,7 +1395,7 @@ SedSetValue_isSetSymbol(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_isSetTarget(SedSetValue_t * ssv)
 {
@@ -1406,7 +1406,7 @@ SedSetValue_isSetTarget(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_isSetMath(SedSetValue_t * ssv)
 {
@@ -1417,7 +1417,7 @@ SedSetValue_isSetMath(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_setRange(SedSetValue_t * ssv, const char * range)
 {
@@ -1428,7 +1428,7 @@ SedSetValue_setRange(SedSetValue_t * ssv, const char * range)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_setModelReference(SedSetValue_t * ssv, const char * modelReference)
 {
@@ -1439,7 +1439,7 @@ SedSetValue_setModelReference(SedSetValue_t * ssv, const char * modelReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_setSymbol(SedSetValue_t * ssv, const char * symbol)
 {
@@ -1450,7 +1450,7 @@ SedSetValue_setSymbol(SedSetValue_t * ssv, const char * symbol)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_setTarget(SedSetValue_t * ssv, const char * target)
 {
@@ -1461,7 +1461,7 @@ SedSetValue_setTarget(SedSetValue_t * ssv, const char * target)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_setMath(SedSetValue_t * ssv, ASTNode_t* math)
 {
@@ -1472,7 +1472,7 @@ SedSetValue_setMath(SedSetValue_t * ssv, ASTNode_t* math)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_unsetRange(SedSetValue_t * ssv)
 {
@@ -1483,7 +1483,7 @@ SedSetValue_unsetRange(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_unsetModelReference(SedSetValue_t * ssv)
 {
@@ -1494,7 +1494,7 @@ SedSetValue_unsetModelReference(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_unsetSymbol(SedSetValue_t * ssv)
 {
@@ -1505,7 +1505,7 @@ SedSetValue_unsetSymbol(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_unsetTarget(SedSetValue_t * ssv)
 {
@@ -1516,7 +1516,7 @@ SedSetValue_unsetTarget(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_unsetMath(SedSetValue_t * ssv)
 {
@@ -1524,112 +1524,112 @@ SedSetValue_unsetMath(SedSetValue_t * ssv)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedSetValue_addVariable(SedSetValue_t * ssv, SedVariable_t * sv)
 {
 	return  (ssv != NULL) ? ssv->addVariable(sv) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedSetValue_createVariable(SedSetValue_t * ssv)
 {
 	return  (ssv != NULL) ? ssv->createVariable() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedSetValue_getSedListOfVariables(SedSetValue_t * ssv)
 {
 	return  (ssv != NULL) ? (SedListOf_t *)ssv->getListOfVariables() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedSetValue_getVariable(SedSetValue_t * ssv, unsigned int n)
 {
 	return  (ssv != NULL) ? ssv->getVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedSetValue_getVariableById(SedSetValue_t * ssv, const char * sid)
 {
 	return  (ssv != NULL) ? ssv->getVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedSetValue_getNumVariables(SedSetValue_t * ssv)
 {
 	return  (ssv != NULL) ? ssv->getNumVariables() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedSetValue_removeVariable(SedSetValue_t * ssv, unsigned int n)
 {
 	return  (ssv != NULL) ? ssv->removeVariable(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedSetValue_removeVariableById(SedSetValue_t * ssv, const char * sid)
 {
 	return  (ssv != NULL) ? ssv->removeVariable(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedSetValue_addParameter(SedSetValue_t * ssv, SedParameter_t * sp)
 {
 	return  (ssv != NULL) ? ssv->addParameter(sp) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedSetValue_createParameter(SedSetValue_t * ssv)
 {
 	return  (ssv != NULL) ? ssv->createParameter() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedSetValue_getSedListOfParameters(SedSetValue_t * ssv)
 {
 	return  (ssv != NULL) ? (SedListOf_t *)ssv->getListOfParameters() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedSetValue_getParameter(SedSetValue_t * ssv, unsigned int n)
 {
 	return  (ssv != NULL) ? ssv->getParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedSetValue_getParameterById(SedSetValue_t * ssv, const char * sid)
 {
 	return  (ssv != NULL) ? ssv->getParameter(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedSetValue_getNumParameters(SedSetValue_t * ssv)
 {
 	return  (ssv != NULL) ? ssv->getNumParameters() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedSetValue_removeParameter(SedSetValue_t * ssv, unsigned int n)
 {
 	return  (ssv != NULL) ? ssv->removeParameter(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedParameter_t *
 SedSetValue_removeParameterById(SedSetValue_t * ssv, const char * sid)
 {
@@ -1639,7 +1639,7 @@ SedSetValue_removeParameterById(SedSetValue_t * ssv, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_hasRequiredAttributes(SedSetValue_t * ssv)
 {
@@ -1650,7 +1650,7 @@ SedSetValue_hasRequiredAttributes(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSetValue_hasRequiredElements(SedSetValue_t * ssv)
 {
@@ -1661,7 +1661,7 @@ SedSetValue_hasRequiredElements(SedSetValue_t * ssv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedListOfTaskChanges_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1675,7 +1675,7 @@ SedListOfTaskChanges_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSetValue_t *
 SedListOfTaskChanges_removeById(SedListOf_t * lo, const char * sid)
 {

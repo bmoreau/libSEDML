@@ -986,7 +986,7 @@ SedListOfVariables::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedVariable_create(unsigned int level, unsigned int version)
 {
@@ -997,7 +997,7 @@ SedVariable_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedVariable_free(SedVariable_t * sv)
 {
@@ -1009,7 +1009,7 @@ SedVariable_free(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedVariable_clone(SedVariable_t * sv)
 {
@@ -1027,7 +1027,7 @@ SedVariable_clone(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedVariable_getId(SedVariable_t * sv)
 {
@@ -1041,7 +1041,7 @@ SedVariable_getId(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedVariable_getName(SedVariable_t * sv)
 {
@@ -1055,7 +1055,7 @@ SedVariable_getName(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedVariable_getSymbol(SedVariable_t * sv)
 {
@@ -1069,7 +1069,7 @@ SedVariable_getSymbol(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedVariable_getTarget(SedVariable_t * sv)
 {
@@ -1083,7 +1083,7 @@ SedVariable_getTarget(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedVariable_getTaskReference(SedVariable_t * sv)
 {
@@ -1097,7 +1097,7 @@ SedVariable_getTaskReference(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedVariable_getModelReference(SedVariable_t * sv)
 {
@@ -1111,7 +1111,7 @@ SedVariable_getModelReference(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_isSetId(SedVariable_t * sv)
 {
@@ -1122,7 +1122,7 @@ SedVariable_isSetId(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_isSetName(SedVariable_t * sv)
 {
@@ -1133,7 +1133,7 @@ SedVariable_isSetName(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_isSetSymbol(SedVariable_t * sv)
 {
@@ -1144,7 +1144,7 @@ SedVariable_isSetSymbol(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_isSetTarget(SedVariable_t * sv)
 {
@@ -1155,7 +1155,7 @@ SedVariable_isSetTarget(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_isSetTaskReference(SedVariable_t * sv)
 {
@@ -1166,7 +1166,7 @@ SedVariable_isSetTaskReference(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_isSetModelReference(SedVariable_t * sv)
 {
@@ -1177,7 +1177,7 @@ SedVariable_isSetModelReference(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_setId(SedVariable_t * sv, const char * id)
 {
@@ -1188,7 +1188,7 @@ SedVariable_setId(SedVariable_t * sv, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_setName(SedVariable_t * sv, const char * name)
 {
@@ -1199,7 +1199,7 @@ SedVariable_setName(SedVariable_t * sv, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_setSymbol(SedVariable_t * sv, const char * symbol)
 {
@@ -1210,7 +1210,7 @@ SedVariable_setSymbol(SedVariable_t * sv, const char * symbol)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_setTarget(SedVariable_t * sv, const char * target)
 {
@@ -1221,7 +1221,7 @@ SedVariable_setTarget(SedVariable_t * sv, const char * target)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_setTaskReference(SedVariable_t * sv, const char * taskReference)
 {
@@ -1232,7 +1232,7 @@ SedVariable_setTaskReference(SedVariable_t * sv, const char * taskReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_setModelReference(SedVariable_t * sv, const char * modelReference)
 {
@@ -1243,7 +1243,7 @@ SedVariable_setModelReference(SedVariable_t * sv, const char * modelReference)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_unsetId(SedVariable_t * sv)
 {
@@ -1254,7 +1254,7 @@ SedVariable_unsetId(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_unsetName(SedVariable_t * sv)
 {
@@ -1265,7 +1265,7 @@ SedVariable_unsetName(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_unsetSymbol(SedVariable_t * sv)
 {
@@ -1276,7 +1276,7 @@ SedVariable_unsetSymbol(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_unsetTarget(SedVariable_t * sv)
 {
@@ -1287,7 +1287,7 @@ SedVariable_unsetTarget(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_unsetTaskReference(SedVariable_t * sv)
 {
@@ -1298,7 +1298,7 @@ SedVariable_unsetTaskReference(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_unsetModelReference(SedVariable_t * sv)
 {
@@ -1309,7 +1309,7 @@ SedVariable_unsetModelReference(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedVariable_hasRequiredAttributes(SedVariable_t * sv)
 {
@@ -1320,7 +1320,7 @@ SedVariable_hasRequiredAttributes(SedVariable_t * sv)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedListOfVariables_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1334,7 +1334,7 @@ SedListOfVariables_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedVariable_t *
 SedListOfVariables_removeById(SedListOf_t * lo, const char * sid)
 {

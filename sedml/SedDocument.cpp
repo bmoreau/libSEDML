@@ -1335,7 +1335,7 @@ SedDocument::getNamespaces() const
 }/**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 SedDocument_create(unsigned int level, unsigned int version)
 {
@@ -1346,7 +1346,7 @@ SedDocument_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedDocument_free(SedDocument_t * sd)
 {
@@ -1358,7 +1358,7 @@ SedDocument_free(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedDocument_t *
 SedDocument_clone(SedDocument_t * sd)
 {
@@ -1376,7 +1376,7 @@ SedDocument_clone(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_getLevel(SedDocument_t * sd)
 {
@@ -1387,7 +1387,7 @@ SedDocument_getLevel(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_getVersion(SedDocument_t * sd)
 {
@@ -1398,7 +1398,7 @@ SedDocument_getVersion(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_isSetLevel(SedDocument_t * sd)
 {
@@ -1409,7 +1409,7 @@ SedDocument_isSetLevel(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_isSetVersion(SedDocument_t * sd)
 {
@@ -1420,7 +1420,7 @@ SedDocument_isSetVersion(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_setLevel(SedDocument_t * sd, int level)
 {
@@ -1431,7 +1431,7 @@ SedDocument_setLevel(SedDocument_t * sd, int level)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_setVersion(SedDocument_t * sd, int version)
 {
@@ -1442,7 +1442,7 @@ SedDocument_setVersion(SedDocument_t * sd, int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_unsetLevel(SedDocument_t * sd)
 {
@@ -1453,7 +1453,7 @@ SedDocument_unsetLevel(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_unsetVersion(SedDocument_t * sd)
 {
@@ -1461,315 +1461,315 @@ SedDocument_unsetVersion(SedDocument_t * sd)
 }
 
 
-LIBSEDML_EXTERN
+
 int
 SedDocument_addSimulation(SedDocument_t * sd, SedSimulation_t * ss)
 {
 	return  (sd != NULL) ? sd->addSimulation(ss) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedUniformTimeCourse_t *
 SedDocument_createUniformTimeCourse(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createUniformTimeCourse() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedOneStep_t *
 SedDocument_createOneStep(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createOneStep() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSteadyState_t *
 SedDocument_createSteadyState(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createSteadyState() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDocument_getSedListOfSimulations(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? (SedListOf_t *)sd->getListOfSimulations() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedDocument_getSimulation(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->getSimulation(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedDocument_getSimulationById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->getSimulation(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDocument_getNumSimulations(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->getNumSimulations() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedDocument_removeSimulation(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->removeSimulation(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedDocument_removeSimulationById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->removeSimulation(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedDocument_addModel(SedDocument_t * sd, SedModel_t * sm)
 {
 	return  (sd != NULL) ? sd->addModel(sm) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedDocument_createModel(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createModel() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDocument_getSedListOfModels(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? (SedListOf_t *)sd->getListOfModels() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedDocument_getModel(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->getModel(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedDocument_getModelById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->getModel(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDocument_getNumModels(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->getNumModels() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedDocument_removeModel(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->removeModel(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedModel_t *
 SedDocument_removeModelById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->removeModel(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedDocument_addTask(SedDocument_t * sd, SedTask_t * st)
 {
 	return  (sd != NULL) ? sd->addTask(st) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedDocument_createTask(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createTask() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedRepeatedTask_t *
 SedDocument_createRepeatedTask(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createRepeatedTask() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDocument_getSedListOfTasks(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? (SedListOf_t *)sd->getListOfTasks() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedDocument_getTask(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->getTask(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedDocument_getTaskById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->getTask(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDocument_getNumTasks(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->getNumTasks() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedDocument_removeTask(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->removeTask(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedTask_t *
 SedDocument_removeTaskById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->removeTask(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedDocument_addDataGenerator(SedDocument_t * sd, SedDataGenerator_t * sdg)
 {
 	return  (sd != NULL) ? sd->addDataGenerator(sdg) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDocument_createDataGenerator(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createDataGenerator() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDocument_getSedListOfDataGenerators(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? (SedListOf_t *)sd->getListOfDataGenerators() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDocument_getDataGenerator(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->getDataGenerator(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDocument_getDataGeneratorById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->getDataGenerator(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDocument_getNumDataGenerators(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->getNumDataGenerators() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDocument_removeDataGenerator(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->removeDataGenerator(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedDataGenerator_t *
 SedDocument_removeDataGeneratorById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->removeDataGenerator(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 int
 SedDocument_addOutput(SedDocument_t * sd, SedOutput_t * so)
 {
 	return  (sd != NULL) ? sd->addOutput(so) : LIBSBML_INVALID_OBJECT;
 }
 
-LIBSEDML_EXTERN
+
 SedReport_t *
 SedDocument_createReport(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createReport() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedPlot2D_t *
 SedDocument_createPlot2D(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createPlot2D() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedPlot3D_t *
 SedDocument_createPlot3D(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->createPlot3D() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedListOf_t *
 SedDocument_getSedListOfOutputs(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? (SedListOf_t *)sd->getListOfOutputs() : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedDocument_getOutput(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->getOutput(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedDocument_getOutputById(SedDocument_t * sd, const char * sid)
 {
 	return  (sd != NULL) ? sd->getOutput(sid) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 unsigned int
 SedDocument_getNumOutputs(SedDocument_t * sd)
 {
 	return  (sd != NULL) ? sd->getNumOutputs() : SEDML_INT_MAX;
 }
 
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedDocument_removeOutput(SedDocument_t * sd, unsigned int n)
 {
 	return  (sd != NULL) ? sd->removeOutput(n) : NULL;
 }
 
-LIBSEDML_EXTERN
+
 SedOutput_t *
 SedDocument_removeOutputById(SedDocument_t * sd, const char * sid)
 {
@@ -1779,7 +1779,7 @@ SedDocument_removeOutputById(SedDocument_t * sd, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_hasRequiredAttributes(SedDocument_t * sd)
 {
@@ -1790,7 +1790,7 @@ SedDocument_hasRequiredAttributes(SedDocument_t * sd)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedDocument_hasRequiredElements(SedDocument_t * sd)
 {

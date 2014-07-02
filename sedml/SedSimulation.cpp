@@ -836,7 +836,7 @@ SedListOfSimulations::writeXMLNS(XMLOutputStream& stream) const
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedSimulation_create(unsigned int level, unsigned int version)
 {
@@ -847,7 +847,7 @@ SedSimulation_create(unsigned int level, unsigned int version)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 void
 SedSimulation_free(SedSimulation_t * ss)
 {
@@ -859,7 +859,7 @@ SedSimulation_free(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedSimulation_clone(SedSimulation_t * ss)
 {
@@ -877,7 +877,7 @@ SedSimulation_clone(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSimulation_getId(SedSimulation_t * ss)
 {
@@ -891,7 +891,7 @@ SedSimulation_getId(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 char *
 SedSimulation_getName(SedSimulation_t * ss)
 {
@@ -905,7 +905,7 @@ SedSimulation_getName(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedAlgorithm_t*
 SedSimulation_getAlgorithm(SedSimulation_t * ss)
 {
@@ -916,7 +916,7 @@ SedSimulation_getAlgorithm(SedSimulation_t * ss)
 }
 
 
-LIBSEDML_EXTERN
+
 SedAlgorithm_t*
 SedSimulation_createAlgorithm(SedSimulation_t * ss)
 {
@@ -930,7 +930,7 @@ SedSimulation_createAlgorithm(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_isSetId(SedSimulation_t * ss)
 {
@@ -941,7 +941,7 @@ SedSimulation_isSetId(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_isSetName(SedSimulation_t * ss)
 {
@@ -952,7 +952,7 @@ SedSimulation_isSetName(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_isSetAlgorithm(SedSimulation_t * ss)
 {
@@ -963,7 +963,7 @@ SedSimulation_isSetAlgorithm(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_setId(SedSimulation_t * ss, const char * id)
 {
@@ -974,7 +974,7 @@ SedSimulation_setId(SedSimulation_t * ss, const char * id)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_setName(SedSimulation_t * ss, const char * name)
 {
@@ -985,7 +985,7 @@ SedSimulation_setName(SedSimulation_t * ss, const char * name)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_setAlgorithm(SedSimulation_t * ss, SedAlgorithm_t* algorithm)
 {
@@ -996,7 +996,7 @@ SedSimulation_setAlgorithm(SedSimulation_t * ss, SedAlgorithm_t* algorithm)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_unsetId(SedSimulation_t * ss)
 {
@@ -1007,7 +1007,7 @@ SedSimulation_unsetId(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_unsetName(SedSimulation_t * ss)
 {
@@ -1018,7 +1018,7 @@ SedSimulation_unsetName(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_unsetAlgorithm(SedSimulation_t * ss)
 {
@@ -1029,7 +1029,7 @@ SedSimulation_unsetAlgorithm(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_hasRequiredAttributes(SedSimulation_t * ss)
 {
@@ -1040,7 +1040,7 @@ SedSimulation_hasRequiredAttributes(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 int
 SedSimulation_hasRequiredElements(SedSimulation_t * ss)
 {
@@ -1051,7 +1051,7 @@ SedSimulation_hasRequiredElements(SedSimulation_t * ss)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedListOfSimulations_getById(SedListOf_t * lo, const char * sid)
 {
@@ -1065,7 +1065,7 @@ SedListOfSimulations_getById(SedListOf_t * lo, const char * sid)
 /**
  * write comments
  */
-LIBSEDML_EXTERN
+
 SedSimulation_t *
 SedListOfSimulations_removeById(SedListOf_t * lo, const char * sid)
 {
