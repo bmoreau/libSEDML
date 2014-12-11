@@ -139,14 +139,7 @@ include(CPack)
 option(WITH_EXAMPLES "Compile the libSEDML example programs."  OFF)
 
 # Which language bindings should be built
-option(WITH_CSHARP   "Generate C# language bindings."     OFF)
-option(WITH_JAVA     "Generate Java language bindings."   OFF)
 option(WITH_PYTHON   "Generate Python language bindings." OFF)
-option(WITH_PERL     "Generate Perl language bindings."   OFF)
-option(WITH_RUBY     "Generate Ruby language bindings"    OFF)
-option(WITH_R        "Generate R language bindings"       OFF)
-option(WITH_OCTAVE   "Generate Octave language bindings." OFF)
-option(WITH_MATLAB   "Generate MATLAB language bindings." OFF)
 
 # Add an option to compile with all warnings shown
 option(WITH_WALL     "Compile with -Wall, so that the compiler will display all warnings." OFF)
@@ -320,31 +313,6 @@ if(WITH_ZLIB)
     endif()
 
 endif(WITH_ZLIB)
-
-
-###############################################################################
-#
-# Find the C# compiler to use and set name for resulting library
-#
-
-if(WITH_CSHARP)
-    find_program(CSHARP_COMPILER
-        NAMES gmcs csc
-        PATHS C:/Windows/Microsoft.NET/Framework/v2.0.50727/ /usr/bin /usr/local/bin
-        DOC "The file name of the C# compiler."
-        )
-    if(UNIX)
-    else()
-        if(CMAKE_SIZEOF_VOID_P EQUAL 4)
-            # mark libsbml library as x86
-            set(CSHARP_EXTRA_ARGS -platform:x86 )
-        elseif(CMAKE_SIZEOF_VOID_P EQUAL 8)
-            # mark libsbml library as x64
-            set(CSHARP_EXTRA_ARGS -platform:x64 )
-        endif()
-    endif()
-
-endif(WITH_CSHARP)
 
 
 ###############################################################################
@@ -735,33 +703,8 @@ if(WITH_SWIG)
     message(STATUS "  Using SWIG                    = ${SWIG_EXECUTABLE}")
 endif()
 
-
-if(WITH_CSHARP)
-    message(STATUS "  Using C#                      = ${CSHARP_COMPILER}")
-endif()
-
-if(WITH_JAVA)
-    message(STATUS "  Using Java                    = ${Java_JAVA_EXECUTABLE}")
-endif()
-
 if(WITH_PYTHON)
     message(STATUS "  Using Python                  = ${PYTHON_EXECUTABLE}")
-endif()
-
-if(WITH_PERL)
-    message(STATUS "  Using Perl                    = ${PERL_EXECUTABLE}")
-endif()
-
-if(WITH_RUBY)
-    message(STATUS "  Using Ruby                    = ${RUBY_EXECUTABLE}")
-endif()
-
-if(WITH_OCTAVE)
-    message(STATUS "  Using Octave                  = ${MKOCTFILE_EXECUTABLE}")
-endif()
-
-if(WITH_MATLAB)
-    message(STATUS "  Using Matlab                  = ${MATLAB_ROOT_PATH}")
 endif()
 
 if(WITH_CHECK)

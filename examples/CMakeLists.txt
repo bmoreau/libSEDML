@@ -38,19 +38,7 @@ if(WITH_EXAMPLES)
 add_subdirectory(c)
 add_subdirectory(c++)
 
-if(WITH_CSHARP)
-  add_subdirectory(csharp)
-endif(WITH_CSHARP)
-
-
-if(WITH_JAVA)
-  add_subdirectory(java)
-endif(WITH_JAVA)
-
-
 endif(WITH_EXAMPLES)
-
-
 
 # the remaining language bindings do not need to be compiled in order to run. 
 
@@ -69,27 +57,6 @@ file(GLOB cpp_samples "${CMAKE_CURRENT_SOURCE_DIR}/c++/*.c"
 					 "${CMAKE_CURRENT_SOURCE_DIR}/c++/*.cpp"
 					 "${CMAKE_CURRENT_SOURCE_DIR}/c++/*.h")
 install(FILES ${cpp_samples} DESTINATION ${MISC_PREFIX}examples/c++)
-
-if(WITH_CSHARP)
-# install c# examples
-file(GLOB cs_samples "${CMAKE_CURRENT_SOURCE_DIR}/csharp/*.cs"
-					 "${CMAKE_CURRENT_SOURCE_DIR}/csharp/README.md")
-install(FILES ${cs_samples} DESTINATION ${MISC_PREFIX}examples/csharp)
-endif()
-
-if(WITH_JAVA)
-# install java examples
-file(GLOB java_samples "${CMAKE_CURRENT_SOURCE_DIR}/java/*.java"
-					 "${CMAKE_CURRENT_SOURCE_DIR}/java/README.md")
-install(FILES ${java_samples} DESTINATION ${MISC_PREFIX}examples/java)
-endif()
-#
-#if(WITH_PERL)
-## install perl examples
-#file(GLOB perl_samples "${CMAKE_CURRENT_SOURCE_DIR}/perl/*.pl"
-#					 "${CMAKE_CURRENT_SOURCE_DIR}/perl/README.md")
-#install(FILES ${perl_samples} DESTINATION ${MISC_PREFIX}examples/perl)
-#endif()
 
 if (WITH_PYTHON)
 # install python examples
